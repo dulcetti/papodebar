@@ -40,10 +40,9 @@ function getMarkdownFiles(dir: string): string[] {
 export function getAllPosts(): Post[] {
   const files = getMarkdownFiles(postsDir)
 
-  return files.map((filePath) => {
+  const posts = files.map((filePath) => {
     const raw = fs.readFileSync(filePath, 'utf-8')
     const { data, content } = matter(raw)
-    const { categories, coverImage, date } = data;
 
     // pega o nome da pasta onde está o index.md
     const slug = path.basename(path.dirname(filePath))
@@ -54,6 +53,14 @@ export function getAllPosts(): Post[] {
       ...(data as PostFrontmatter),
     }
   })
+
+  posts.sort((previous, next) => {
+    const previousDate = new Date(previous.date).getTime()
+    const nextDate = new Date(next.date).getTime()
+    return nextDate - previousDate
+  })
+
+  return posts
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
