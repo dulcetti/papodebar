@@ -1,0 +1,74 @@
+@use 'sass:map';
+
+@mixin flexBox($hAlign, $vAlign) {
+  align-items: $vAlign;
+  display: flex;
+  justify-content: $hAlign;
+}
+
+@mixin boxShadow($color, $opacity) {
+  box-shadow: 1px 1px 5px 0 rgba($color, $opacity);
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin transition($type, $time) {
+  transition: $type $time;
+}
+
+@mixin linkEfect($color, $hoverColor: #f0ad4e) {
+  position: relative;
+  transition: color .3s;
+
+  &:before {
+    background-color: $color;
+    bottom: -2px;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transition: all .3s ease-in-out 0s;
+    visibility: hidden;
+    width: 100%;
+  }
+
+  &:hover {
+    &:before {
+      background-color: $hoverColor;
+      transform: scaleX(1);
+      visibility: visible;
+    }
+  }
+}
+
+@mixin retina($width) {
+  @media only screen and (min-device-pixel-ratio: 2) and (max-width: $width), only screen and (min-resolution: 192dpi) and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin pseudo($content: '', $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+//media queries
+$breakpoints: ("phone-small": 320px, "phone": 375px, "phone-wide": 480px, "phablet": 560px, "tablet-small": 640px, "tablet": 768px, "tablet-wide": 1024px, "desktop": 1025px, "desktop-wide": 1440px, "large-desktop": 1600px );
+
+@mixin mq($width, $type: min) {
+  @if map.has-key($breakpoints, $width) {
+    $width: map.get($breakpoints, $width);
+  }
+
+  @if $type == max {
+    $width: $width - 1px;
+  }
+
+  @media only screen and (#{$type}-width: $width) {
+    @content;
+  }
+}

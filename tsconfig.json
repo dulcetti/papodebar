@@ -22,6 +22,7 @@
       "@/*": ["./*"],
       "@/libs": ["./libs/*"],
       "@/components": ["./components/*"],
+      "@/styles": ["./styles/*"],
     }
   },
   "include": [

@@ -1,0 +1,25 @@
+@use './mixins.scss';
+
+.content-home {
+  background-color: transparent;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+
+  .list-posts {
+    .post:not(.-latests),
+    .type-post:not(.-latests) {
+      > .thumb {
+        @include mixins.mq('tablet-wide', max) {
+          min-height: 170px;
+        }
+        @include mixins.mq('tablet-wide') {
+          min-height: 223px;
+        }
+      }
+
+      > .categories {
+        display: none;
+      }
+    }
+  }
+}
