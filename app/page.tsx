@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { getAllPosts } from '@/libs/posts'
 import { paginate } from '@/libs/pagination';
 import { Pagination } from '@/components/Pagination';
+import { NewsHeroCard } from '@/components/news-hero-card';
 
 import stylesGrid from '@/styles/Grid.module.scss';
 import stylesHome from '@/styles/Home.module.scss';
@@ -19,9 +20,13 @@ export default function Home() {
         <ul className={stylesHome['list-posts']}>
           {data.map((post) => (
             <li key={post.slug} className={stylesHome['post']}>
-              {post.coverImage && <p><img src={`images/${post.coverImage}`} alt="Imagem do artigo" className={stylesHome['thumb']} /></p>}
-              <Link href={`/${post.slug}`}>{post.title}</Link>
-              <p className={stylesHome['categories']}>{post.categories[0]}</p>
+              <NewsHeroCard
+                href={`/${post.slug}`}
+                imageSrc={`images/${post.coverImage}`}
+                imageAlt={`Imagem do artigo ${post.title}`}
+                size="md"
+                title={post.title}
+              />
             </li>
           ))}
         </ul>
