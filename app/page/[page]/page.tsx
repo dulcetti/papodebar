@@ -3,7 +3,7 @@ import { paginate } from '@/libs/pagination'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 
-import { Pagination } from '@/components/Pagination';
+import { Pagination } from '@/components/pagination';
 
 const POSTS_PER_PAGE = 10
 
