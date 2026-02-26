@@ -1,9 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllPosts, getPostBySlug } from "../../libs/posts";
-import { remark } from "remark";
-import html from "remark-html";
-import breaks from 'remark-breaks'
+import { markdownToHtml } from '@/libs/markdowns'
+import { PostDate } from "@/components/post-date";
+
+import styles from '@/styles/Post.module.scss';
 
 interface PostPageProps {
   params: Promise<{
@@ -39,16 +40,23 @@ export default async function PostPage({ params }: PostPageProps) {
     notFound();
   }
 
-  const processed = await remark()
-    .use(breaks)
-    .use(html)
-    .process(post.content);
+  const processed = await markdownToHtml(post.content)
   const contentHtml = processed.toString();
 
   return (
-    <article>
-      <h1>{post.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: contentHtml }} />
+    <article className={styles["single-post"]}>
+      <header className={styles["header-post"]}>
+        <PostDate
+          className={styles["post-date"]}
+          date={post.date}
+        />
+        <h1 className={styles.heading}>{post.title}</h1>
+      </header>
+
+      <div
+        className={styles["post-content"]}
+        dangerouslySetInnerHTML={{ __html: contentHtml }}
+      />
     </article>
   );
 }
