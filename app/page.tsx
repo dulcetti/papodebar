@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import { getAllPosts } from '@/libs/posts'
 import { paginate } from '@/libs/pagination';
-import { Pagination } from '@/components/Pagination';
+import { Pagination } from '@/components/pagination'
 import { NewsHeroCard } from '@/components/news-hero-card';
 
 import stylesGrid from '@/styles/Grid.module.scss';
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <main className={stylesGrid['container-fluid']}>
       <div className={stylesHome['content-home']}>
-        <h1>Papo de Bar</h1>
         <ul className={stylesHome['list-posts']}>
           {data.map((post) => (
             <li key={post.slug} className={stylesHome['post']}>
