@@ -1,0 +1,213 @@
+@use './mixins.scss';
+
+.post-content {
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 5px;
+  }
+  > h2 {
+    color: #555;
+    font-size: 32px;
+    padding-bottom: 7px;
+    position: relative;
+
+    &::before {
+      background-color: #C3E6E9;
+      bottom: 0;
+      content: '';
+      height: 6px;
+      left: 0;
+      position: absolute;
+      width: 120px;
+    }
+    &::after {
+      background-color: #fff;
+      bottom: 1px;
+      content: '';
+      height: 4px;
+      left: 40px;
+      position: absolute;
+      width: 40px;
+    }
+  }
+  > h3 {
+    border-bottom: 2px solid #f0ad4e;
+    color: #666;
+    font-size: 26px;
+    margin-bottom: 12px;
+    padding-bottom: 3px;
+
+    &:before {
+      content: '\00bb\00a0\fe0e';
+    }
+  }
+  > h4 {
+    color: #888;
+
+    &:before {
+      content: '\203a\00a0\fe0e';
+    }
+  }
+  > p,
+  ol,
+  ul {
+    @include mixins.mq('tablet-wide', max) {
+      margin-bottom: 15px;
+    }
+    @include mixins.mq('tablet-wide') {
+      line-height: 18px;
+      margin-bottom: 20px;
+    }
+  }
+  > p,
+  li {
+    a {
+      font-weight: 700;
+      @include mixins.linkEfect(#337ab7);
+
+      &:hover {
+        color: #f0ad4e;
+        transition: color .3s;
+      }
+    }
+    img {
+      background: #fff url('/theme/bx_loader.gif') no-repeat center;
+      border: 2px solid #ddd;
+    }
+  }
+  > p {
+    line-height: 20px;
+  }
+  > ul,
+  > ol {
+    margin-left: 20px;
+
+    > li {
+      margin-bottom: 10px;
+    }
+  }
+  > ul {
+    > li {
+      list-style: square inside;
+    }
+  }
+  > ol {
+    > li {
+      list-style: decimal inside;
+    }
+  }
+  .wp-caption,
+  img {
+    max-width: 100%;
+  }
+  > .widget_pdb_newsletter {
+    background-color: #ddd;
+    padding: 20px;
+
+    > .title {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.single-post {
+  margin: 0 auto;
+  max-width: 1280px;
+
+  > .header-post {
+    border-bottom: 1px dashed #ccc;
+    display: flex;
+    margin-bottom: 20px;
+
+    > .heading {
+      color: #f9ab21;
+      font-size: 26px;
+      text-shadow: 2px 2px 1px #000;
+    }
+
+    > .post-date {
+      color: #337ab7;
+      font-family: 'Encode Sans Condensed', sans-serif;
+      line-height: 22px;
+      min-width: 70px;
+      padding: 10px;
+      text-align: center;
+
+      @include mixins.mq('tablet-wide') {
+        border-right: 1px dashed #ccc;
+        margin-right: 15px;
+        padding-right: 15px;
+      }
+
+      > .day,
+      > .month {
+        font-size: 18px;
+      }
+      > .year {
+        display: block;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .post {
+    .container-post {
+      @include mixins.mq('tablet-wide') {
+        padding: 0;
+      }
+      @include mixins.mq('tablet-wide', max) {
+        padding-top: 1em;
+      }
+      &.branded {
+        @include mixins.mq('tablet-wide') {
+          max-width: 1140px;
+        }
+      }
+      > .row > .content {
+        @include mixins.mq('tablet-wide') {
+          padding: 1em 2em;
+        }
+      }
+      .entry-content {
+        > .entry-infos {
+          margin-bottom: 20px;
+
+          @include mixins.mq('tablet-wide', max) {
+            @include mixins.flexBox(center, flex-end);
+            flex-direction: row-reverse;
+          }
+          @include mixins.mq('tablet-wide') {
+            @include mixins.flexBox(start, center);
+          }
+          > .excerpt {
+            color: #999;
+            font-family: 'Encode Sans Condensed', sans-serif;
+            font-style: italic;
+            font-weight: 300;
+
+            @include mixins.mq('tablet-wide', max) {
+              font-size: 16px;
+              line-height: 20px;
+            }
+            @include mixins.mq('tablet-wide') {
+              font-size: 20px;
+              padding-right: 15px;
+            }
+            &:after,
+            &:before {
+              color: #777;
+              font-weight: 400;
+            }
+            &:after {
+              content: '\201d\fe0e';
+            }
+            &:before {
+              content: '\201c\fe0e';
+            }
+          }
+        }
+      }
+    }
+  }
+}
