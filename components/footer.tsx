@@ -2,6 +2,8 @@ import { tv } from 'tailwind-variants'
 import { twMerge } from 'tailwind-merge'
 import type { ComponentProps } from 'react'
 
+import styles from '@/styles/Footer.module.scss';
+
 // ---------------------------------------------------------------------------
 // Variants
 // ---------------------------------------------------------------------------
@@ -187,7 +189,7 @@ export function Footer({
 	tagline = 'sigam-me os bons',
 	socialLinks = SOCIAL_LINKS,
 	linkGroups = FOOTER_LINK_GROUPS,
-	copyrightText = '© 2008 - 2026 Papo de Bar',
+	copyrightText = `&copy; 2008 - ${new Date().getFullYear()} Papo de Bar`,
 	...props
 }: FooterProps) {
 	const slots = footerVariants()
@@ -195,19 +197,19 @@ export function Footer({
 	return (
 		<footer
 			data-slot="site-footer"
-			className={twMerge(slots.root(), className)}
+			className={styles['site-footer']}
 			{...props}
 		>
 			{/* ── Main body ── */}
-			<div data-slot="site-footer-body" className={slots.body()}>
+			<div data-slot="site-footer-body" className={styles.menus}>
 
 				{/* Brand column */}
-				<div data-slot="site-footer-brand" className={slots.brand()}>
+				<div data-slot="site-footer-brand" className={styles['col-brand']}>
 					{logoSrc ? (
 						<img
 							src={logoSrc}
 							alt={logoAlt}
-							className={slots.brandLogo()}
+							className={styles.brand}
 						/>
 					) : (
 						/* Fallback badge matching the gold PdB shield in the design */
@@ -219,12 +221,12 @@ export function Footer({
 						</div>
 					)}
 
-					<p data-slot="site-footer-tagline" className={slots.brandTagline()}>
-						{tagline}
-					</p>
-
 					{/* Social icons grid */}
-					<div data-slot="site-footer-socials" className={slots.socialGrid()}>
+					<div data-slot="site-footer-socials" className={styles['col-social']}>
+            <p data-slot="site-footer-tagline" className={styles['title']}>
+              {tagline}
+            </p>
+
 						{socialLinks.map((social) => (
 							<a
 								key={social.id}
@@ -252,9 +254,6 @@ export function Footer({
 						))}
 					</div>
 				</div>
-
-				{/* Vertical divider */}
-				<div data-slot="site-footer-divider" className={slots.divider()} aria-hidden="true" />
 
 				{/* Links columns */}
 				<nav
@@ -292,14 +291,3 @@ export function Footer({
 		</footer>
 	)
 }
-
-// ---------------------------------------------------------------------------
-// Usage example
-// ---------------------------------------------------------------------------
-//
-// <SiteFooter
-//   logoSrc="/images/logo-pdb.png"
-//   logoAlt="Papo de Bar"
-//   tagline="sigam-me os bons"
-//   copyrightText="© 2008 - 2026 Papo de Bar"
-// />
