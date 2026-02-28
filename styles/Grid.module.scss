@@ -9,25 +9,32 @@ body {
     background-image: url('/theme/bg-azulejo@2x.png');
     background-size: 76px;
   }
+
   &.page-id-14433 {
     background-image: url('/theme/bg-cachaca.gif');
   }
+
   &.page-id-14379 {
     background-image: url('/theme/bg-cerveja.gif');
   }
+
   &.page-id-14407 {
     background-image: url('/theme/bg-tequila.gif');
   }
+
   &.page-id-14436 {
     background-image: url('/theme/bg-vinho.gif');
   }
+
   &.page-id-14403 {
     background-image: url('/theme/bg-vodka.gif');
   }
+
   &.page-id-14397 {
     background-image: url('/theme/bg-whisky.gif');
   }
 }
+
 .skip-link {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;
@@ -47,6 +54,7 @@ body {
     z-index: 1;
   }
 }
+
 .container-fluid {
   max-width: 1600px;
   padding-left: 1rem;
@@ -56,6 +64,7 @@ body {
     padding: 0;
   }
 }
+
 .container-content {
   overflow: hidden;
 
@@ -67,33 +76,27 @@ body {
       background-color: transparent;
     }
   }
-}/* classes */
+}
+
+/* classes */
 .aligncenter {
   display: block;
   margin: 0 auto 15px;
 }
+
 .alignleft {
   display: block;
   float: left;
   margin: 0 15px 15px 0;
 }
+
 .alignright {
   display: block;
   float: right;
   margin: 0 0 15px 15px;
 }
+
 .loading {
   background: url('/theme/bx_loader.gif') no-repeat center;
   height: 50px;
-}
-.yuzo_related_post {
-  margin-top: 0;
-  padding-top: 0;
-
-  .yuzo_wraps {
-    > .yuzo-list:nth-child(3),
-    > .yuzo-list:nth-child(5) {
-      clear: both;
-    }
-  }
 }
