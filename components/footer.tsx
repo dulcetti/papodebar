@@ -2,23 +2,13 @@ import type { ComponentProps } from 'react';
 
 import styles from '@/styles/Footer.module.scss';
 
-// ---------------------------------------------------------------------------
-// Sub-types
-// ---------------------------------------------------------------------------
-
 export interface SocialLink {
-	id: string
-	label: string
-	href: string
-	/** Background color for the social icon button */
-	color: string
-	/** SVG path(s) rendered inside the icon */
-	iconPath: string
+	id: string;
+	label: string;
+	href: string;
+	color: string;
+	iconPath: string;
 }
-
-// ---------------------------------------------------------------------------
-// Default data (matching the design)
-// ---------------------------------------------------------------------------
 
 export const SOCIAL_LINKS: SocialLink[] = [
 	{
@@ -99,18 +89,10 @@ export const FOOTER_LINK_CATEGORIES = [
   { label: 'Tecnologia', href: '/tecnologia' },
 ]
 
-// ---------------------------------------------------------------------------
-// Props
-// ---------------------------------------------------------------------------
-
 export interface FooterProps extends ComponentProps<'footer'> {
 	tagline?: string
 	copyrightText?: string
 }
-
-// ---------------------------------------------------------------------------
-// Component
-// ---------------------------------------------------------------------------
 
 export function Footer({
 	className,
