@@ -1,0 +1,180 @@
+@use './mixins';
+
+.site-footer {
+  @include mixins.mq('tablet-wide', max) {
+    padding-bottom: 60px;
+  }
+
+  > .menus {
+    background-color: #555;
+    color: #fff;
+    @include mixins.flexBox(space-between, center);
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1.5rem 1rem;
+
+    a {
+      color: #fff;
+    }
+
+    .cols {
+      flex: 0 0 auto;
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+    .cols-sm {
+      flex-basis: 16.66666667%;
+      max-width: 16.66666667%;
+    }
+
+    .cols-md {
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
+    }
+
+    .col-brand {
+      min-height: 160px;
+
+      @include mixins.mq('tablet-wide', max) {
+        margin-bottom: 40px;
+      }
+
+      > .brand {
+        background: url('/theme/marca-rodape-compacta.png') no-repeat center;
+        height: 165px;
+        text-indent: -99999px;
+
+        @include mixins.mq('tablet-wide') {
+          background-size: 100%;
+          width: 85%;
+        }
+      }
+    }
+
+    .col-social {
+      @include mixins.mq('tablet', max) {
+        text-align: center;
+      }
+
+      .title {
+        font-family: 'Encode Sans Condensed', sans-serif;
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 15px;
+      }
+
+      .menu-social {
+        @include mixins.mq('tablet-wide', max) {
+          margin-bottom: 30px;
+        }
+
+        > .menu-item {
+          display: inline-block;
+          margin-bottom: 20px;
+
+          @include mixins.mq('tablet-wide', max) {
+            height: 38px;
+            margin-right: 6px;
+            width: 38px;
+          }
+
+          @include mixins.mq('tablet-wide') {
+            height: 48px;
+            margin-right: 10px;
+            width: 48px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          > a {
+            display: flex;
+            height: 100%;
+            width: 100%;
+
+            > .icon {
+              height: 24px;
+              width: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    .col-menu,
+    .col-categories {
+      .menu-links {
+        > li {
+          border-left: 2px solid;
+          font-family: 'Encode Sans Condensed', sans-serif;
+          font-size: 16px;
+
+          @include mixins.mq('tablet') {
+            display: inline-block;
+            width: 49%;
+          }
+          > a {
+            background-color: transparent;
+            transition: background-color .25s;
+
+            @include mixins.mq('tablet') {
+              display: inline-block;
+              padding: 2px 10px;
+            }
+            @include mixins.mq('tablet', max) {
+              display: block;
+              padding: 5px 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .col-menu {
+      .menu-links {
+        > li {
+          border-left-color: #337ab7;
+
+          > a:hover {
+            background-color: #337ab7;
+            transition: background-color .25s;
+          }
+        }
+      }
+    }
+
+    .col-categories {
+      .menu-links {
+        > li {
+          border-left-color: #f9ab21;
+
+          > a:hover {
+            background-color: #f9ab21;
+            transition: background-color .25s;
+          }
+        }
+      }
+    }
+  }
+
+  > .infos-copyright {
+    background-color: #444;
+    padding: 20px 1rem;
+
+    address {
+      color: #fff;
+      font-style: normal;
+    }
+  }
+}
+
+.single-post {
+  .site-footer {
+    @include mixins.mq('tablet-wide', max) {
+      padding-bottom: 112px;
+    }
+  }
+}
