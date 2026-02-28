@@ -8,10 +8,30 @@
   > .menus {
     background-color: #555;
     color: #fff;
+    @include mixins.flexBox(space-between, center);
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding: 1.5rem 1rem;
 
     a {
       color: #fff;
+    }
+
+    .cols {
+      flex: 0 0 auto;
+      padding-right: .5rem;
+      padding-left: .5rem;
+    }
+
+    .cols-sm {
+      flex-basis: 16.66666667%;
+      max-width: 16.66666667%;
+    }
+
+    .cols-md {
+      flex-basis: 33.33333333%;
+      max-width: 33.33333333%;
     }
 
     .col-brand {
@@ -23,7 +43,7 @@
 
       > .brand {
         background: url('/theme/marca-rodape-compacta.png') no-repeat center;
-        height: 100%;
+        height: 165px;
         text-indent: -99999px;
 
         @include mixins.mq('tablet-wide') {
@@ -40,7 +60,7 @@
 
       .title {
         font-family: 'Encode Sans Condensed', sans-serif;
-        font-size: 28px;
+        font-size: 22px;
         line-height: 32px;
         margin-bottom: 15px;
       }
