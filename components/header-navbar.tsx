@@ -16,11 +16,14 @@ import type { Icon } from '@phosphor-icons/react'
 export const navbarVariants = tv({
 	slots: {
 		root: [
-			'relative flex h-14 w-full items-center shadow-lg',
+			'fixed flex h-14 w-full items-center shadow-lg',
 			'[background-image:url("/theme/bg-azulejo.png")]',
 			'[background-repeat:repeat]',
+      '[z-index:1]',
+      '[top:0]',
+      '[left:0]',
 		],
-		inner: 'mx-auto flex w-full max-w-screen-xl items-center px-4',
+		inner: 'm-auto flex w-full max-w-screen-xl items-center px-4',
 		logo: [
 			'shrink-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
 			'rounded-sm',
@@ -29,7 +32,7 @@ export const navbarVariants = tv({
 		nav: 'ml-6 flex flex-1 items-center justify-center gap-1',
 		navItem: [
 			'flex cursor-pointer items-center gap-1.5 rounded-md px-3 py-1.5',
-			'text-sm font-medium text-foreground-subtle transition-colors',
+			'text-base font-medium text-foreground-subtle transition-colors mx-10',
 			'hover:bg-black/5 hover:text-foreground',
 			'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
 			'data-[active]:text-foreground data-[active]:bg-black/10',
