@@ -1,6 +1,4 @@
-import { tv } from 'tailwind-variants'
-import { twMerge } from 'tailwind-merge'
-import type { ComponentProps } from 'react'
+import type { ComponentProps } from 'react';
 
 import styles from '@/styles/Footer.module.scss';
 
