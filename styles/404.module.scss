@@ -22,20 +22,24 @@
       &:first-child {
         float: left;
       }
+
       &:last-child {
         float: right;
       }
     }
   }
+
   .content {
     > p {
       margin-bottom: 30px;
     }
+
     > .search-form {
       > .title {
         font-size: 30px;
         margin-bottom: 20px;
       }
+
       > .fieldset {
         margin: 0 auto;
       }
