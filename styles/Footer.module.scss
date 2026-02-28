@@ -8,7 +8,7 @@
   > .menus {
     background-color: #555;
     color: #fff;
-    padding: 40px 0;
+    padding: 1.5rem 1rem;
 
     a {
       color: #fff;
@@ -45,11 +45,39 @@
         margin-bottom: 15px;
       }
 
-      .menu {
+      .menu-social {
+        @include mixins.mq('tablet-wide', max) {
+          margin-bottom: 30px;
+        }
+
         > .menu-item {
-          &.menu-item-18738 {
-            @include mixins.mq('tablet-wide') {
-              margin-right: 40px;
+          display: inline-block;
+          margin-bottom: 20px;
+
+          @include mixins.mq('tablet-wide', max) {
+            height: 38px;
+            margin-right: 6px;
+            width: 38px;
+          }
+
+          @include mixins.mq('tablet-wide') {
+            height: 48px;
+            margin-right: 10px;
+            width: 48px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          > a {
+            display: flex;
+            height: 100%;
+            width: 100%;
+
+            > .icon {
+              height: 24px;
+              width: 24px;
             }
           }
         }
@@ -58,7 +86,7 @@
 
     .col-menu,
     .col-categories {
-      .menu {
+      .menu-links {
         > li {
           border-left: 2px solid;
           font-family: 'Encode Sans Condensed', sans-serif;
@@ -86,7 +114,7 @@
     }
 
     .col-menu {
-      .menu {
+      .menu-links {
         > li {
           border-left-color: #337ab7;
 
@@ -99,7 +127,7 @@
     }
 
     .col-categories {
-      .menu {
+      .menu-links {
         > li {
           border-left-color: #f9ab21;
 
@@ -114,10 +142,10 @@
 
   > .infos-copyright {
     background-color: #444;
-    color: #fff;
-    padding: 20px 0;
+    padding: 20px 1rem;
 
     address {
+      color: #fff;
       font-style: normal;
     }
   }
