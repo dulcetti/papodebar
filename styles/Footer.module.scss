@@ -1,43 +1,10 @@
-.site-footer {
-  display: none;
+@use './mixins';
 
-  @include mq('tablet-wide', max) {
+.site-footer {
+  @include mixins.mq('tablet-wide', max) {
     padding-bottom: 60px;
   }
-  > .newsletter {
-    color: #fff;
 
-    @include mq('tablet', max) {
-      background: #888 url('/theme/newsletter-footer-mobile.jpg') no-repeat -100px center;
-      background-size: auto 100%;
-      min-height: 160px;
-      padding: 20px 0 0 60px;
-      text-align: right;
-    }
-    @include mq('tablet') {
-      background: #888 url('/theme/newsletter-footer.jpg') no-repeat center;
-      background-size: 100%;
-      min-height: 280px;
-      padding-top: 20px;
-      text-align: center;
-    }
-    .row {
-      justify-content: center;
-
-      > .col-newsletter {
-        .title {
-          display: none;
-        }
-        .form-newsletter {
-          > .label-field {
-            > .text {
-              font-size: 28px;
-            }
-          }
-        }
-      }
-    }
-  }
   > .menus {
     background-color: #555;
     color: #fff;
@@ -46,43 +13,49 @@
     a {
       color: #fff;
     }
+
     .col-brand {
       min-height: 160px;
 
-      @include mq('tablet-wide', max) {
+      @include mixins.mq('tablet-wide', max) {
         margin-bottom: 40px;
       }
+
       > .brand {
         background: url('/theme/marca-rodape-compacta.png') no-repeat center;
         height: 100%;
         text-indent: -99999px;
 
-        @include mq('tablet-wide') {
+        @include mixins.mq('tablet-wide') {
           background-size: 100%;
           width: 85%;
         }
       }
     }
+
     .col-social {
-      @include mq('tablet', max) {
+      @include mixins.mq('tablet', max) {
         text-align: center;
       }
+
       .title {
         font-family: 'Encode Sans Condensed', sans-serif;
         font-size: 28px;
         line-height: 32px;
         margin-bottom: 15px;
       }
+
       .menu {
         > .menu-item {
           &.menu-item-18738 {
-            @include mq('tablet-wide') {
+            @include mixins.mq('tablet-wide') {
               margin-right: 40px;
             }
           }
         }
       }
     }
+
     .col-menu,
     .col-categories {
       .menu {
@@ -91,7 +64,7 @@
           font-family: 'Encode Sans Condensed', sans-serif;
           font-size: 16px;
 
-          @include mq('tablet') {
+          @include mixins.mq('tablet') {
             display: inline-block;
             width: 49%;
           }
@@ -99,11 +72,11 @@
             background-color: transparent;
             transition: background-color .25s;
 
-            @include mq('tablet') {
+            @include mixins.mq('tablet') {
               display: inline-block;
               padding: 2px 10px;
             }
-            @include mq('tablet', max) {
+            @include mixins.mq('tablet', max) {
               display: block;
               padding: 5px 10px;
             }
@@ -111,6 +84,7 @@
         }
       }
     }
+
     .col-menu {
       .menu {
         > li {
@@ -123,6 +97,7 @@
         }
       }
     }
+
     .col-categories {
       .menu {
         > li {
@@ -136,7 +111,8 @@
       }
     }
   }
-  > .infos {
+
+  > .infos-copyright {
     background-color: #444;
     color: #fff;
     padding: 20px 0;
@@ -146,9 +122,10 @@
     }
   }
 }
+
 .single-post {
   .site-footer {
-    @include mq('tablet-wide', max) {
+    @include mixins.mq('tablet-wide', max) {
       padding-bottom: 112px;
     }
   }
