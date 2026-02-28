@@ -6,6 +6,7 @@
   h4 {
     margin-bottom: 5px;
   }
+
   > h2 {
     color: #555;
     font-size: 32px;
@@ -21,6 +22,7 @@
       position: absolute;
       width: 120px;
     }
+
     &::after {
       background-color: #fff;
       bottom: 1px;
@@ -31,6 +33,7 @@
       width: 40px;
     }
   }
+
   > h3 {
     border-bottom: 2px solid #f0ad4e;
     color: #666;
@@ -42,6 +45,7 @@
       content: '\00bb\00a0\fe0e';
     }
   }
+
   > h4 {
     color: #888;
 
@@ -49,6 +53,7 @@
       content: '\203a\00a0\fe0e';
     }
   }
+
   > p,
   ol,
   ul {
@@ -60,6 +65,7 @@
       margin-bottom: 20px;
     }
   }
+
   > p,
   li {
     a {
@@ -76,9 +82,11 @@
       border: 2px solid #ddd;
     }
   }
+
   > p {
     line-height: 20px;
   }
+
   > ul,
   > ol {
     margin-left: 20px;
@@ -87,33 +95,43 @@
       margin-bottom: 10px;
     }
   }
+
   > ul {
     > li {
       list-style: square inside;
     }
   }
+
   > ol {
     > li {
       list-style: decimal inside;
     }
   }
-  .wp-caption,
+
   img {
+    margin: 0 auto;
     max-width: 100%;
   }
-  > .widget_pdb_newsletter {
-    background-color: #ddd;
-    padding: 20px;
 
-    > .title {
-      margin-bottom: 0;
+  > figure {
+    p {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+
+    > figcaption {
+        text-align: center;
     }
   }
 }
 
 .single-post {
+  background-color: #fff;
   margin: 0 auto;
   max-width: 1280px;
+  padding: 0 24px 6px;
 
   > .header-post {
     border-bottom: 1px dashed #ccc;
@@ -122,8 +140,13 @@
 
     > .heading {
       color: #f9ab21;
-      font-size: 26px;
-      text-shadow: 2px 2px 1px #000;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      line-height: 1;
+      text-shadow: 2px 1px 1px #000;
+
+      &:first-line {
+        line-height: 1.65;
+      }
     }
 
     > .post-date {

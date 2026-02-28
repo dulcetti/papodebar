@@ -4,11 +4,11 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
+
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
+
 body {
   overflow-x: hidden;
 
@@ -18,9 +18,11 @@ body {
     width: 0;
   }
 }
+
 p {
   font-size: 15px;
 }
+
 blockquote {
   border: 0;
   color: #555;
@@ -48,22 +50,27 @@ blockquote {
     }
   }
 }
+
 img {
   border: 0;
   height: auto;
   max-width: 100%;
   -ms-interpolation-mode: bicubic;
 }
+
 fieldset {
   border: 0;
 }
+
 li {
   list-style: none;
 }
+
 a {
   color: #337ab7;
   text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -72,6 +79,7 @@ h5,
 h6 {
   font-family: 'Encode Sans Condensed', sans-serif;
 }
+
 @include mixins.mq('tablet-wide', max) {
   h1 {
     font-size: 22px;
@@ -92,9 +100,10 @@ h6 {
     font-size: 14px;
   }
 }
+
 @include mixins.mq('tablet-wide') {
   h1 {
-    font-size: 36px;
+    font-size: 38px;
   }
   h2 {
     font-size: 32px;
@@ -112,6 +121,7 @@ h6 {
     font-size: 14px;
   }
 }
+
 iframe {
   max-width: 100%;
 }
