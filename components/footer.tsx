@@ -130,7 +130,6 @@ export function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   data-slot="site-footer-social-link"
-                  className={slots.socialLink()}
                   style={{ backgroundColor: social.color }}
                 >
                   <svg
@@ -196,6 +195,7 @@ export function Footer({
             ))}
 					</ul>
 				</nav>
+			</div>
 
 			<div data-slot="site-footer-bottom" className={styles['infos-copyright']}>
 				<address dangerouslySetInnerHTML={{ __html: copyrightText }}></address>
