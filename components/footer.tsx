@@ -170,8 +170,6 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
 // ---------------------------------------------------------------------------
 
 export interface FooterProps extends ComponentProps<'footer'> {
-	logoSrc?: string
-	logoAlt?: string
 	tagline?: string
 	socialLinks?: SocialLink[]
 	linkGroups?: FooterLinkGroup[]
@@ -184,8 +182,6 @@ export interface FooterProps extends ComponentProps<'footer'> {
 
 export function Footer({
 	className,
-	logoSrc,
-	logoAlt = 'PdB',
 	tagline = 'sigam-me os bons',
 	socialLinks = SOCIAL_LINKS,
 	linkGroups = FOOTER_LINK_GROUPS,
@@ -200,72 +196,61 @@ export function Footer({
 			className={styles['site-footer']}
 			{...props}
 		>
-			{/* ── Main body ── */}
 			<div data-slot="site-footer-body" className={styles.menus}>
-
-				{/* Brand column */}
 				<div data-slot="site-footer-brand" className={styles['col-brand']}>
-					{logoSrc ? (
-						<img
-							src={logoSrc}
-							alt={logoAlt}
-							className={styles.brand}
-						/>
-					) : (
-						/* Fallback badge matching the gold PdB shield in the design */
-						<div
-							aria-label={logoAlt}
-							className="flex h-28 w-28 items-center justify-center rounded-lg bg-amber-500 text-3xl font-black text-white shadow-md"
-						>
-							PdB
-						</div>
-					)}
+          <h2
+            aria-label="Papo de Bar"
+            className={styles.brand}
+          >
+            Papo de Bar
+          </h2>
+        </div>
 
-					{/* Social icons grid */}
-					<div data-slot="site-footer-socials" className={styles['col-social']}>
-            <p data-slot="site-footer-tagline" className={styles['title']}>
-              {tagline}
-            </p>
+        <div data-slot="site-footer-socials" className={styles['col-social']}>
+          <p data-slot="site-footer-tagline" className={styles['title']}>
+            {tagline}
+          </p>
 
-						{socialLinks.map((social) => (
-							<a
-								key={social.id}
-								href={social.href}
-								aria-label={social.label}
-								target="_blank"
-								rel="noopener noreferrer"
-								data-slot="site-footer-social-link"
-								className={slots.socialLink()}
-								style={{ backgroundColor: social.color }}
-							>
-								<svg
-									viewBox="0 0 24 24"
-									fill="none"
-									stroke="currentColor"
-									strokeWidth={2}
-									strokeLinecap="round"
-									strokeLinejoin="round"
-									aria-hidden="true"
-									className="size-5"
-								>
-									<path d={social.iconPath} />
-								</svg>
-							</a>
-						))}
-					</div>
-				</div>
+          <ul className={styles['menu-social']}>
+            {socialLinks.map((social) => (
+              <li key={social.id} className={styles['menu-item']}>
+                <a
+                  href={social.href}
+                  aria-label={social.label}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-slot="site-footer-social-link"
+                  className={slots.socialLink()}
+                  style={{ backgroundColor: social.color }}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                    className={styles.icon}
+                  >
+                    <path d={social.iconPath} />
+                  </svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-				{/* Links columns */}
 				<nav
 					data-slot="site-footer-links"
 					aria-label="Links do rodapé"
-					className={slots.linksArea()}
+					className={styles['col-menu']}
 				>
 					{linkGroups.map((group) => (
 						<ul
 							key={group.id}
 							data-slot="site-footer-links-column"
-							className={slots.linksColumn()}
+							className={styles['menu-links']}
 							role="list"
 						>
 							{group.links.map((link) => (
@@ -273,7 +258,6 @@ export function Footer({
 									<a
 										href={link.href}
 										data-slot="site-footer-link"
-										className={slots.link()}
 									>
 										{link.label}
 									</a>
@@ -284,9 +268,8 @@ export function Footer({
 				</nav>
 			</div>
 
-			{/* ── Bottom bar ── */}
-			<div data-slot="site-footer-bottom" className={slots.bottomBar()}>
-				<p className={slots.copyright()}>{copyrightText}</p>
+			<div data-slot="site-footer-bottom" className={styles['infos-copyright']}>
+				<address dangerouslySetInnerHTML={{ __html: copyrightText }}></address>
 			</div>
 		</footer>
 	)
