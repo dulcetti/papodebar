@@ -1,0 +1,44 @@
+.error-404 {
+  background-image: url('/theme/trigo-esq.jpg'), url('/theme/trigo-dir.jpg');
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  text-align: center;
+
+  .box-404 {
+    background: url('/theme/tulipa-cerveja.jpg') no-repeat center;
+    border: 7px solid #000;
+    border-radius: 50%;
+    height: 350px;
+    line-height: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 350px;
+
+    span {
+      font-family: 'Encode Sans Condensed', sans-serif;
+      font-size: 180px;
+
+      &:first-child {
+        float: left;
+      }
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+  .content {
+    > p {
+      margin-bottom: 30px;
+    }
+    > .search-form {
+      > .title {
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+      > .fieldset {
+        margin: 0 auto;
+      }
+    }
+  }
+}
