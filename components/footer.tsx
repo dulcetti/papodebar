@@ -176,7 +176,7 @@ export function Footer({
         <nav
 					data-slot="site-footer-links"
 					aria-label="Links do rodapé"
-					className={`${styles['col-menu']} ${styles['cols']} ${styles['cols-md']}`}
+					className={`${styles['col-categories']} ${styles['cols']} ${styles['cols-md']}`}
 				>
           <ul
             data-slot="site-footer-links-column"
