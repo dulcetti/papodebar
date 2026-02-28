@@ -5,48 +5,6 @@ import type { ComponentProps } from 'react'
 import styles from '@/styles/Footer.module.scss';
 
 // ---------------------------------------------------------------------------
-// Variants
-// ---------------------------------------------------------------------------
-
-export const footerVariants = tv({
-	slots: {
-		root: 'w-full bg-[#5a5a5a] text-white',
-
-		// Main content row
-		body: 'mx-auto flex max-w-screen-xl items-start gap-8 px-6 py-8',
-
-		// Left column — logo + socials
-		brand: 'flex shrink-0 flex-col items-start gap-4',
-		brandLogo: 'h-28 w-auto object-contain',
-		brandTagline: 'text-base font-semibold text-white',
-		socialGrid: 'grid grid-cols-3 gap-2',
-		socialLink: [
-			'flex size-10 items-center justify-center rounded-md transition-opacity',
-			'hover:opacity-80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
-			'[&_svg]:size-5',
-		],
-
-		// Divider between brand and links
-		divider: 'w-px self-stretch bg-white/20',
-
-		// Links area
-		linksArea: 'flex flex-1 flex-wrap gap-x-0 gap-y-6',
-		linksColumn: [
-			'flex min-w-[140px] flex-col gap-1.5',
-			'border-l border-white/20 pl-6 first:border-l-0 first:pl-0',
-		],
-		link: [
-			'text-sm text-white/80 transition-colors',
-			'hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm',
-		],
-
-		// Bottom bar
-		bottomBar: 'border-t border-white/10 px-6 py-3',
-		copyright: 'text-xs text-white/60',
-	},
-})
-
-// ---------------------------------------------------------------------------
 // Sub-types
 // ---------------------------------------------------------------------------
 
@@ -58,11 +16,6 @@ export interface SocialLink {
 	color: string
 	/** SVG path(s) rendered inside the icon */
 	iconPath: string
-}
-
-export interface FooterLinkGroup {
-	id: string
-	links: Array<{ label: string; href: string }>
 }
 
 // ---------------------------------------------------------------------------
@@ -120,49 +73,32 @@ export const SOCIAL_LINKS: SocialLink[] = [
 	},
 ]
 
-export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
-	{
-		id: 'col-1',
-		links: [
-			{ label: 'Anuncie', href: '/anuncie' },
-			{ label: 'Equipe', href: '/equipe' },
-			{ label: 'Contos Etílicos', href: '/contos-etilicos' },
-			{ label: 'Degustações e Harmonizações', href: '/degustacoes' },
-			{ label: 'Drinks', href: '/drinks' },
-		],
-	},
-	{
-		id: 'col-2',
-		links: [
-			{ label: 'Contato', href: '/contato' },
-			{ label: '#EstiloPdB', href: '/estilo-pdb' },
-			{ label: 'Curiosidades', href: '/curiosidades' },
-			{ label: 'Dicas', href: '/dicas' },
-			{ label: 'Entrevistas', href: '/entrevistas' },
-		],
-	},
-	{
-		id: 'col-3',
-		links: [
-			{ label: 'Eventos', href: '/eventos' },
-			{ label: 'Gastronomia', href: '/gastronomia' },
-			{ label: 'Música', href: '/musica' },
-			{ label: 'Onde Beber?', href: '/onde-beber' },
-			{ label: 'Promoções', href: '/promocoes' },
-			{ label: 'Shots', href: '/shots' },
-		],
-	},
-	{
-		id: 'col-4',
-		links: [
-			{ label: 'Experiência PdB', href: '/experiencia-pdb' },
-			{ label: 'Marketing', href: '/marketing' },
-			{ label: 'Novidades', href: '/novidades' },
-			{ label: 'Produção de Cerveja', href: '/producao-de-cerveja' },
-			{ label: 'Responsabilidade', href: '/responsabilidade' },
-			{ label: 'Tecnologia', href: '/tecnologia' },
-		],
-	},
+export const FOOTER_LINK_PAGES = [
+  { label: 'Anuncie', href: '/anuncie' },
+  { label: 'Equipe', href: '/equipe' },
+  { label: 'Contos Etílicos', href: '/contos-etilicos' },
+  { label: 'Degustações e Harmonizações', href: '/degustacoes' },
+  { label: 'Drinks', href: '/drinks' },
+  { label: 'Contato', href: '/contato' },
+  { label: '#EstiloPdB', href: '/estilo-pdb' },
+  { label: 'Curiosidades', href: '/curiosidades' },
+  { label: 'Dicas', href: '/dicas' },
+  { label: 'Entrevistas', href: '/entrevistas' },
+]
+
+export const FOOTER_LINK_CATEGORIES = [
+  { label: 'Eventos', href: '/eventos' },
+  { label: 'Gastronomia', href: '/gastronomia' },
+  { label: 'Música', href: '/musica' },
+  { label: 'Onde Beber?', href: '/onde-beber' },
+  { label: 'Promoções', href: '/promocoes' },
+  { label: 'Shots', href: '/shots' },
+  { label: 'Experiência PdB', href: '/experiencia-pdb' },
+  { label: 'Marketing', href: '/marketing' },
+  { label: 'Novidades', href: '/novidades' },
+  { label: 'Produção de Cerveja', href: '/producao-de-cerveja' },
+  { label: 'Responsabilidade', href: '/responsabilidade' },
+  { label: 'Tecnologia', href: '/tecnologia' },
 ]
 
 // ---------------------------------------------------------------------------
@@ -171,8 +107,6 @@ export const FOOTER_LINK_GROUPS: FooterLinkGroup[] = [
 
 export interface FooterProps extends ComponentProps<'footer'> {
 	tagline?: string
-	socialLinks?: SocialLink[]
-	linkGroups?: FooterLinkGroup[]
 	copyrightText?: string
 }
 
@@ -183,13 +117,9 @@ export interface FooterProps extends ComponentProps<'footer'> {
 export function Footer({
 	className,
 	tagline = 'sigam-me os bons',
-	socialLinks = SOCIAL_LINKS,
-	linkGroups = FOOTER_LINK_GROUPS,
 	copyrightText = `&copy; 2008 - ${new Date().getFullYear()} Papo de Bar`,
 	...props
 }: FooterProps) {
-	const slots = footerVariants()
-
 	return (
 		<footer
 			data-slot="site-footer"
@@ -197,7 +127,7 @@ export function Footer({
 			{...props}
 		>
 			<div data-slot="site-footer-body" className={styles.menus}>
-				<div data-slot="site-footer-brand" className={styles['col-brand']}>
+				<div data-slot="site-footer-brand" className={`${styles['col-brand']} ${styles['cols']} ${styles['cols-sm']}`}>
           <h2
             aria-label="Papo de Bar"
             className={styles.brand}
@@ -206,13 +136,13 @@ export function Footer({
           </h2>
         </div>
 
-        <div data-slot="site-footer-socials" className={styles['col-social']}>
+        <div data-slot="site-footer-socials" className={`${styles['col-social']} ${styles['cols']} ${styles['cols-sm']}`}>
           <p data-slot="site-footer-tagline" className={styles['title']}>
             {tagline}
           </p>
 
           <ul className={styles['menu-social']}>
-            {socialLinks.map((social) => (
+            {SOCIAL_LINKS.map((social) => (
               <li key={social.id} className={styles['menu-item']}>
                 <a
                   href={social.href}
@@ -244,29 +174,48 @@ export function Footer({
 				<nav
 					data-slot="site-footer-links"
 					aria-label="Links do rodapé"
-					className={styles['col-menu']}
+					className={`${styles['col-menu']} ${styles['cols']} ${styles['cols-md']}`}
 				>
-					{linkGroups.map((group) => (
-						<ul
-							key={group.id}
-							data-slot="site-footer-links-column"
-							className={styles['menu-links']}
-							role="list"
-						>
-							{group.links.map((link) => (
-								<li key={link.href}>
-									<a
-										href={link.href}
-										data-slot="site-footer-link"
-									>
-										{link.label}
-									</a>
-								</li>
-							))}
-						</ul>
-					))}
+          <ul
+            data-slot="site-footer-links-column"
+            className={styles['menu-links']}
+            role="list"
+          >
+            {FOOTER_LINK_PAGES.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  data-slot="site-footer-link"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+					</ul>
 				</nav>
-			</div>
+
+        <nav
+					data-slot="site-footer-links"
+					aria-label="Links do rodapé"
+					className={`${styles['col-menu']} ${styles['cols']} ${styles['cols-md']}`}
+				>
+          <ul
+            data-slot="site-footer-links-column"
+            className={styles['menu-links']}
+            role="list"
+          >
+            {FOOTER_LINK_CATEGORIES.map((link) => (
+              <li key={link.href}>
+                <a
+                  href={link.href}
+                  data-slot="site-footer-link"
+                >
+                  {link.label}
+                </a>
+              </li>
+            ))}
+					</ul>
+				</nav>
 
 			<div data-slot="site-footer-bottom" className={styles['infos-copyright']}>
 				<address dangerouslySetInnerHTML={{ __html: copyrightText }}></address>
