@@ -6,7 +6,7 @@ import type { ComponentProps } from 'react'
 // Variants
 // ---------------------------------------------------------------------------
 
-export const newsHeroCardVariants = tv({
+export const sidebarHeroCardVariants = tv({
 	slots: {
 		root: [
 			'group relative overflow-hidden rounded-xl border border-border bg-surface',
@@ -57,9 +57,9 @@ export const newsHeroCardVariants = tv({
 // Types
 // ---------------------------------------------------------------------------
 
-export interface NewsHeroCardProps
+export interface HeroCardProps
 	extends Omit<ComponentProps<'article'>, 'children'>,
-		VariantProps<typeof newsHeroCardVariants> {
+		VariantProps<typeof sidebarHeroCardVariants> {
 	/** URL da imagem de capa */
 	imageSrc: string
 	/** Texto alternativo da imagem */
@@ -78,7 +78,7 @@ export interface NewsHeroCardProps
 // Component
 // ---------------------------------------------------------------------------
 
-export function NewsHeroCard({
+export function HeroCard({
 	className,
 	size,
 	imageSrc,
@@ -88,8 +88,8 @@ export function NewsHeroCard({
 	href,
 	onClick,
 	...props
-}: NewsHeroCardProps) {
-	const slots = newsHeroCardVariants({ size })
+}: HeroCardProps) {
+	const slots = sidebarHeroCardVariants({ size })
 	const isInteractive = Boolean(href || onClick)
 
 	const inner = (
@@ -170,7 +170,7 @@ export function NewsHeroCard({
 // Usage example
 // ---------------------------------------------------------------------------
 //
-// <NewsHeroCard
+// <HeroCard
 //   size="md"
 //   imageSrc="/images/bar-do-mussum.jpg"
 //   imageAlt="Fachada do Bar do Mussum no Downtown"
