@@ -2,10 +2,6 @@ import { tv, type VariantProps } from 'tailwind-variants'
 import { twMerge } from 'tailwind-merge'
 import type { ComponentProps } from 'react'
 
-// ---------------------------------------------------------------------------
-// Variants
-// ---------------------------------------------------------------------------
-
 export const sidebarHeroCardVariants = tv({
 	slots: {
 		root: [
@@ -53,28 +49,15 @@ export const sidebarHeroCardVariants = tv({
 	defaultVariants: { size: 'md' },
 })
 
-// ---------------------------------------------------------------------------
-// Types
-// ---------------------------------------------------------------------------
-
 export interface SidebarHeroCardProps
 	extends Omit<ComponentProps<'article'>, 'children'>,
 		VariantProps<typeof sidebarHeroCardVariants> {
-	/** URL da imagem de capa */
 	imageSrc: string
-	/** Texto alternativo da imagem */
 	imageAlt?: string
-	/** Título do artigo exibido sobre a imagem */
 	title: string
-	/** Rótulo da categoria exibido no canto superior direito */
 	category?: string
-	/** Torna o card clicável como link */
 	href: string
 }
-
-// ---------------------------------------------------------------------------
-// Component
-// ---------------------------------------------------------------------------
 
 export function SidebarHeroCard({
 	className,
@@ -96,14 +79,12 @@ export function SidebarHeroCard({
 				className={slots.image()}
 			/>
 
-			{/* gradient overlay */}
 			<div
 				data-slot="sidebar-hero-card-overlay"
 				aria-hidden="true"
 				className={slots.overlay()}
 			/>
 
-			{/* category badge */}
 			{category && (
 				<span
 					data-slot="sidebar-hero-card-badge"
@@ -113,7 +94,6 @@ export function SidebarHeroCard({
 				</span>
 			)}
 
-			{/* text content */}
 			<div data-slot="sidebar-hero-card-content" className={slots.content()}>
 				<p data-slot="sidebar-hero-card-title" className={slots.title()}>
 					{title}
