@@ -57,7 +57,7 @@ export const sidebarHeroCardVariants = tv({
 // Types
 // ---------------------------------------------------------------------------
 
-export interface HeroCardProps
+export interface SidebarHeroCardProps
 	extends Omit<ComponentProps<'article'>, 'children'>,
 		VariantProps<typeof sidebarHeroCardVariants> {
 	/** URL da imagem de capa */
@@ -78,7 +78,7 @@ export interface HeroCardProps
 // Component
 // ---------------------------------------------------------------------------
 
-export function HeroCard({
+export function SidebarHeroCard({
 	className,
 	size,
 	imageSrc,
@@ -88,7 +88,7 @@ export function HeroCard({
 	href,
 	onClick,
 	...props
-}: HeroCardProps) {
+}: SidebarHeroCardProps) {
 	const slots = sidebarHeroCardVariants({ size })
 	const isInteractive = Boolean(href || onClick)
 
@@ -127,50 +127,24 @@ export function HeroCard({
 		</>
 	)
 
-	if (href) {
-		return (
-			<article
-				data-slot="news-hero-card"
-				className={twMerge(slots.root(), className)}
-				{...props}
-			>
-				<a href={href} className="block focus-visible:outline-none" tabIndex={0}>
-					{inner}
-				</a>
-			</article>
-		)
-	}
-
-	return (
-		<article
-			data-slot="news-hero-card"
-			role={isInteractive ? 'button' : undefined}
-			tabIndex={isInteractive ? 0 : undefined}
-			onClick={onClick}
-			onKeyDown={
-				isInteractive
-					? (e) => {
-							if (e.key === 'Enter' || e.key === ' ') onClick?.()
-						}
-					: undefined
-			}
-			className={twMerge(
-				slots.root(),
-				isInteractive && 'cursor-pointer',
-				className,
-			)}
-			{...props}
-		>
-			{inner}
-		</article>
-	)
+  return (
+    <article
+      data-slot="news-hero-card"
+      className={twMerge(slots.root(), className)}
+      {...props}
+    >
+      <a href={href} className="block focus-visible:outline-none" tabIndex={0}>
+        {inner}
+      </a>
+    </article>
+  )
 }
 
 // ---------------------------------------------------------------------------
 // Usage example
 // ---------------------------------------------------------------------------
 //
-// <HeroCard
+// <SidebarHeroCard
 //   size="md"
 //   imageSrc="/images/bar-do-mussum.jpg"
 //   imageAlt="Fachada do Bar do Mussum no Downtown"
