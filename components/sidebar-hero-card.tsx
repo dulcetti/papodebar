@@ -69,38 +69,7 @@ export function SidebarHeroCard({
 	href,
 	...props
 }: SidebarHeroCardProps) {
-	const slots = sidebarHeroCardVariants({ size })
-	const inner = (
-		<>
-			<img
-				data-slot="sidebar-hero-card-image"
-				src={imageSrc}
-				alt={imageAlt}
-				className={slots.image()}
-			/>
-
-			<div
-				data-slot="sidebar-hero-card-overlay"
-				aria-hidden="true"
-				className={slots.overlay()}
-			/>
-
-			{category && (
-				<span
-					data-slot="sidebar-hero-card-badge"
-					className={slots.badge()}
-				>
-					{category}
-				</span>
-			)}
-
-			<div data-slot="sidebar-hero-card-content" className={slots.content()}>
-				<p data-slot="sidebar-hero-card-title" className={slots.title()}>
-					{title}
-				</p>
-			</div>
-		</>
-	)
+	const slots = sidebarHeroCardVariants({ size });
 
   return (
     <article
@@ -109,7 +78,33 @@ export function SidebarHeroCard({
       {...props}
     >
       <a href={href} className="block focus-visible:outline-none" tabIndex={0}>
-        {inner}
+        <img
+          data-slot="sidebar-hero-card-image"
+          src={imageSrc}
+          alt={imageAlt}
+          className={slots.image()}
+        />
+
+        <div
+          data-slot="sidebar-hero-card-overlay"
+          aria-hidden="true"
+          className={slots.overlay()}
+        />
+
+        {category && (
+          <span
+            data-slot="sidebar-hero-card-badge"
+            className={slots.badge()}
+          >
+            {category}
+          </span>
+        )}
+
+        <div data-slot="sidebar-hero-card-content" className={slots.content()}>
+          <p data-slot="sidebar-hero-card-title" className={slots.title()}>
+            {title}
+          </p>
+        </div>
       </a>
     </article>
   )
