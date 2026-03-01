@@ -69,9 +69,7 @@ export interface SidebarHeroCardProps
 	/** Rótulo da categoria exibido no canto superior direito */
 	category?: string
 	/** Torna o card clicável como link */
-	href?: string
-	/** Callback ao clicar no card */
-	onClick?: () => void
+	href: string
 }
 
 // ---------------------------------------------------------------------------
@@ -86,12 +84,9 @@ export function SidebarHeroCard({
 	title,
 	category,
 	href,
-	onClick,
 	...props
 }: SidebarHeroCardProps) {
 	const slots = sidebarHeroCardVariants({ size })
-	const isInteractive = Boolean(href || onClick)
-
 	const inner = (
 		<>
 			<img
@@ -139,16 +134,3 @@ export function SidebarHeroCard({
     </article>
   )
 }
-
-// ---------------------------------------------------------------------------
-// Usage example
-// ---------------------------------------------------------------------------
-//
-// <SidebarHeroCard
-//   size="md"
-//   imageSrc="/images/bar-do-mussum.jpg"
-//   imageAlt="Fachada do Bar do Mussum no Downtown"
-//   title="Bar do Mussum é lançado no Downtown"
-//   category="Onde Beber?"
-//   href="/noticias/bar-do-mussum-downtown"
-// />
