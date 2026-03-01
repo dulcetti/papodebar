@@ -90,7 +90,7 @@ export function SidebarHeroCard({
 	const inner = (
 		<>
 			<img
-				data-slot="news-hero-card-image"
+				data-slot="sidebar-hero-card-image"
 				src={imageSrc}
 				alt={imageAlt}
 				className={slots.image()}
@@ -98,7 +98,7 @@ export function SidebarHeroCard({
 
 			{/* gradient overlay */}
 			<div
-				data-slot="news-hero-card-overlay"
+				data-slot="sidebar-hero-card-overlay"
 				aria-hidden="true"
 				className={slots.overlay()}
 			/>
@@ -106,7 +106,7 @@ export function SidebarHeroCard({
 			{/* category badge */}
 			{category && (
 				<span
-					data-slot="news-hero-card-badge"
+					data-slot="sidebar-hero-card-badge"
 					className={slots.badge()}
 				>
 					{category}
@@ -114,8 +114,8 @@ export function SidebarHeroCard({
 			)}
 
 			{/* text content */}
-			<div data-slot="news-hero-card-content" className={slots.content()}>
-				<p data-slot="news-hero-card-title" className={slots.title()}>
+			<div data-slot="sidebar-hero-card-content" className={slots.content()}>
+				<p data-slot="sidebar-hero-card-title" className={slots.title()}>
 					{title}
 				</p>
 			</div>
@@ -124,7 +124,7 @@ export function SidebarHeroCard({
 
   return (
     <article
-      data-slot="news-hero-card"
+      data-slot="sidebar-hero-card"
       className={twMerge(slots.root(), className)}
       {...props}
     >
