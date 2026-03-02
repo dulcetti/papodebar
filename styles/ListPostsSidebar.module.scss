@@ -1,0 +1,70 @@
+@use './mixins.scss';
+
+.list-posts-sidebar {
+  margin-bottom: 20px;
+
+  @include mixins.mq('tablet', max) {
+    min-height: 250px;
+  }
+
+  .post {
+    position: relative;
+    width: 320px;
+
+    > .thumb {
+      width: 100%;
+    }
+
+    > .categories {
+      border-top: 2px solid #f9ab21;
+      padding-top: 3px;
+      position: absolute;
+      right: 10px;
+      top: 7px;
+
+      > .category {
+        color: #fff;
+        font-family: 'Encode Sans Condensed', sans-serif;
+        text-shadow: 2px 2px 1px #000;
+        transition: color .25s;
+
+        &:hover {
+          color: #f9ab21;
+          transition: color .25s;
+        }
+
+        @include mixins.mq('tablet', max) {
+          font-size: 14px;
+        }
+
+        @include mixins.mq('tablet') {
+          font-size: 16px;
+        }
+      }
+    }
+
+    > .title {
+      color: #fff;
+      font-family: 'Encode Sans Condensed', sans-serif;
+      font-weight: 600;
+      height: inherit;
+      left: 0;
+      padding: 10px;
+      position: absolute;
+      text-shadow: 1px 1px #000;
+      bottom: 0;
+      width: 100%;
+      z-index: 1;
+
+      @include mixins.mq('tablet', max) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      @include mixins.mq('tablet') {
+        font-size: 20px;
+        line-height: 22px;
+      }
+    }
+  }
+}

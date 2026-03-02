@@ -44,19 +44,25 @@ export default async function PostPage({ params }: PostPageProps) {
   const contentHtml = processed.toString();
 
   return (
-    <article className={styles["single-post"]}>
-      <header className={styles["header-post"]}>
-        <PostDate
-          className={styles["post-date"]}
-          date={post.date}
-        />
-        <h1 className={styles.heading}>{post.title}</h1>
-      </header>
+    <article className={styles["container-post"]}>
+      <section className={styles["single-post"]}>
+        <header className={styles["header-post"]}>
+          <PostDate
+            className={styles["post-date"]}
+            date={post.date}
+          />
+          <h1 className={styles.heading}>{post.title}</h1>
+        </header>
 
-      <div
-        className={styles["post-content"]}
-        dangerouslySetInnerHTML={{ __html: contentHtml }}
-      />
+        <div
+          className={styles["post-content"]}
+          dangerouslySetInnerHTML={{ __html: contentHtml }}
+        />
+      </section>
+
+      <aside className={styles["sidebar-post"]}>
+        Biriba
+      </aside>
     </article>
   );
 }
