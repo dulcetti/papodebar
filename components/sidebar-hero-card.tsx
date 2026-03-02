@@ -1,5 +1,7 @@
 import type { ComponentProps } from 'react';
 
+import styles from '@/styles/ListPostsSidebar.module.scss';
+
 export interface SidebarHeroCardProps
 	extends Omit<ComponentProps<'article'>, 'children'> {
 	imageSrc: string
@@ -21,37 +23,31 @@ export function SidebarHeroCard({
   return (
     <article
       data-slot="sidebar-hero-card"
-      className={}
+      className={styles["list-posts-sidebar"]}
       {...props}
     >
-      <a href={href} className="block focus-visible:outline-none" tabIndex={0}>
+      <a href={href} className={styles.post} tabIndex={0}>
         <img
           data-slot="sidebar-hero-card-image"
           src={imageSrc}
           alt={imageAlt}
-          className={}
-        />
-
-        <div
-          data-slot="sidebar-hero-card-overlay"
-          aria-hidden="true"
-          className={}
+          className={styles.thumb}
         />
 
         {category && (
-          <span
+          <p
             data-slot="sidebar-hero-card-badge"
-            className={}
+            className={styles.categories}
           >
-            {category}
-          </span>
+            <span className={styles.category}>
+              {category}
+            </span>
+          </p>
         )}
 
-        <div data-slot="sidebar-hero-card-content" className={}>
-          <p data-slot="sidebar-hero-card-title" className={}>
-            {title}
-          </p>
-        </div>
+        <h3 data-slot="sidebar-hero-card-title" className={styles.title}>
+          {title}
+        </h3>
       </a>
     </article>
   )
