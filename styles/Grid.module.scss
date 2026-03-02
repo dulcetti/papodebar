@@ -56,24 +56,12 @@ body {
 }
 
 .container-fluid {
+  margin: 0 auto;
   max-width: 1600px;
   padding: 3.5rem 1rem 0;
 
   &.-home {
     padding: 0;
-  }
-}
-
-.container-content {
-  overflow: hidden;
-
-  .container-fluid {
-    background-color: #fff;
-
-    &.-home,
-    &.-latests {
-      background-color: transparent;
-    }
   }
 }
 
