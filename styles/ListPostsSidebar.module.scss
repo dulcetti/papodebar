@@ -1,0 +1,120 @@
+.list-posts-sidebar {
+  margin-bottom: 20px;
+
+  @include mq('tablet', max) {
+    min-height: 250px;
+  }
+  @include mq('tablet') {
+    display: flex;
+    justify-content: space-between;
+    min-height: 400px;
+  }
+  .post,
+  .type-post {
+    @include mq('tablet', max) {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    @include mq('tablet') {
+      width: 20%;
+    }
+    > .thumb {
+      background-repeat: no-repeat;
+      background-position: center;
+      position: relative;
+      width: 100%;
+
+      @include mq('tablet', max) {
+        height: 250px;
+      }
+      @include mq('tablet') {
+        height: 400px;
+      }
+      > .bg {
+        background-color: rgba(#000, .4);
+        height: inherit;
+        width: 100%;
+
+        > .link {
+          color: #f9ab21;
+          display: block;
+          font-family: 'Encode Sans Condensed', sans-serif;
+          font-weight: bold;
+          height: inherit;
+          left: 0;
+          line-height: 28px;
+          padding: 15px;
+          position: absolute;
+          text-shadow: 1px 1px #000;
+          top: 0;
+          width: 100%;
+          z-index: 1;
+
+          @include mq('tablet', max) {
+            font-size: 22px;
+          }
+          @include mq('tablet') {
+            font-size: 26px;
+          }
+        }
+        > .excerpt {
+          bottom: 0;
+          color: #fff;
+          display: block;
+          left: 0;
+          padding: 15px;
+          position: absolute;
+          width: 100%;
+
+          > .share-post {
+            margin-bottom: 10px;
+            position: relative;
+            transition: opacity .5s;
+            z-index: 2;
+
+            @include mq('tablet') {
+              opacity: 0;
+            }
+            > .link {
+              > span {
+                display: none;
+              }
+            }
+          }
+          > p {
+            font-family: 'Encode Sans Condensed', sans-serif;
+
+            @include mq('tablet', max) {
+              font-size: 18px;
+            }
+            @include mq('tablet') {
+              font-size: 20px;
+              transition: font-size .5s;
+            }
+          }
+        }
+      }
+      &:hover {
+        > .bg {
+          background-color: rgba(#000, .6);
+          transition: background-color .5s;
+
+          > .excerpt {
+            > .share-post {
+              @include mq('tablet') {
+                opacity: 1;
+                transition: opacity .5s;
+              }
+            }
+            > p {
+              @include mq('tablet') {
+                font-size: 22px;
+                transition: font-size .5s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
