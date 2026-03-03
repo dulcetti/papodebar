@@ -24,31 +24,6 @@
       }
     }
 
-    > .post-date {
-        color: #337ab7;
-        font-family: 'Encode Sans Condensed', sans-serif;
-        line-height: 22px;
-        min-width: 70px;
-        padding: 10px;
-        text-align: center;
-
-        @include mixins.mq('tablet-wide') {
-          border-right: 1px dashed #ccc;
-          margin-right: 15px;
-          padding-right: 15px;
-        }
-
-        > .day,
-        > .month {
-          font-size: 18px;
-        }
-        > .year {
-          display: block;
-          font-size: 22px;
-        }
-      }
-    }
-
     > .post-content {
       padding-left: 16px;
 
