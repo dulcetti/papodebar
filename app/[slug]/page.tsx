@@ -2,7 +2,9 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { getAllPosts, getPostBySlug } from "../../libs/posts";
 import { markdownToHtml } from '@/libs/markdowns'
+
 import { PostDate } from "@/components/post-date";
+import { SidebarHeroCard } from '@/components/sidebar-hero-card';
 
 import styles from '@/styles/Post.module.scss';
 
@@ -61,7 +63,12 @@ export default async function PostPage({ params }: PostPageProps) {
       </section>
 
       <aside className={styles["sidebar-post"]}>
-        Biriba
+        <SidebarHeroCard
+          imageSrc={`/images/${post.coverImage}`}
+          title={post.title}
+          category={post.categories[0]}
+          href={`/${post.slug}`}
+        />
       </aside>
     </article>
   );
