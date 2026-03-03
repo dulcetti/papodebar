@@ -1,7 +1,7 @@
 'use client'
 
 import { ComponentProps } from 'react';
-import styles from '@/styles/Post.module.scss';
+import styles from '@/styles/PostDate.module.scss';
 
 interface PostDateProps extends ComponentProps<'div'> {
   date: string;
@@ -41,7 +41,7 @@ export function PostDate({
   return (
     <div
       data-slot="post-date"
-      className={className}
+      className={`${styles["post-date"]} ${className}`}
       itemProp="datePublished"
       content={isoDate}
       {...props}
