@@ -5,12 +5,12 @@
 
   > .single-post {
     background-color: #fff;
-    padding: 0 24px 6px;
+    padding-right: 16px;
 
     > .header-post {
       border-bottom: 1px dashed #ccc;
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 16px;
 
       > .heading {
         color: #f9ab21;
@@ -22,8 +22,9 @@
           line-height: 1.65;
         }
       }
+    }
 
-      > .post-date {
+    > .post-date {
         color: #337ab7;
         font-family: 'Encode Sans Condensed', sans-serif;
         line-height: 22px;
@@ -49,6 +50,8 @@
     }
 
     > .post-content {
+      padding-left: 16px;
+
       h2,
       h3,
       h4 {
@@ -177,6 +180,7 @@
   }
 
   > .sidebar-post {
-    background-color: red;
+    background-color: #fff;
+    box-shadow: -6px 6px 7px -6px rgba(#000, .5);
   }
 }
