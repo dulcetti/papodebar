@@ -6,6 +6,9 @@
   padding-bottom: 5px;
 
   .list-posts {
+    display: flex;
+    flex-wrap: wrap;
+
     .post:not(.-latests),
     .type-post:not(.-latests) {
       > .thumb {
