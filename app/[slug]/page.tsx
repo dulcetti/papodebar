@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { getAllPosts, getPostBySlug } from "../../libs/posts";
+import { Post, getAllPosts, getPostBySlug, getRecentPosts } from "@/libs/posts";
 import { markdownToHtml } from '@/libs/markdowns'
 
 import { PostDate } from "@/components/post-date";
@@ -37,6 +37,7 @@ export async function generateMetadata({
 export default async function PostPage({ params }: PostPageProps) {
   const { slug } = await params;
   const post = getPostBySlug(slug);
+  const recentPosts = getRecentPosts();
 
   if (!post) {
     notFound();
@@ -63,12 +64,15 @@ export default async function PostPage({ params }: PostPageProps) {
       </section>
 
       <aside className={styles["sidebar-post"]}>
-        <SidebarHeroCard
-          imageSrc={`/images/${post.coverImage}`}
-          title={post.title}
-          category={post.categories[0]}
-          href={`/${post.slug}`}
-        />
+        {recentPosts.map((recentPost: Post) => (
+          <SidebarHeroCard
+            key={recentPost.slug}
+            imageSrc={`/images/${recentPost.coverImage}`}
+            title={recentPost.title}
+            category={recentPost.categories[0]}
+            href={`/${recentPost.slug}`}
+          />
+        ))}
       </aside>
     </article>
   );
