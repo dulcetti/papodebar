@@ -1,17 +1,14 @@
 @use './mixins.scss';
 
-.list-posts-sidebar {
-  margin-bottom: 20px;
-
-  @include mixins.mq('tablet', max) {
-    min-height: 250px;
-  }
+.sidebar-hero-card {
+  margin-bottom: 5px;
 
   .post {
     position: relative;
     width: 320px;
 
     > .thumb {
+      min-height: 154px;
       width: 100%;
     }
 
