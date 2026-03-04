@@ -8,9 +8,12 @@
   .list-posts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
-    .post:not(.-latests),
-    .type-post:not(.-latests) {
+    .post {
+      margin-bottom: 24px;
+      max-width: 410px;
+
       > .thumb {
         @include mixins.mq('tablet-wide', max) {
           min-height: 170px;
