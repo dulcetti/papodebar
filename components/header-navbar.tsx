@@ -22,6 +22,7 @@ export const navbarVariants = tv({
       '[z-index:1]',
       '[top:0]',
       '[left:0]',
+      '[z-index:2]',
 		],
 		inner: 'm-auto flex w-full max-w-screen-xl items-center px-4',
 		logo: [
