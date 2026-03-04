@@ -5,7 +5,7 @@ import { NewsHeroCard } from '@/components/news-hero-card';
 
 import stylesHome from '@/styles/Home.module.scss';
 
-const POSTS_PER_PAGE = 10;
+const POSTS_PER_PAGE = 12;
 
 export default function Home() {
   const posts = getAllPosts();

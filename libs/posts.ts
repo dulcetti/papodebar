@@ -52,17 +52,27 @@ export function getAllPosts(): Post[] {
       content,
       ...(data as PostFrontmatter),
     }
-  })
+  });
 
-  posts.sort((previous, next) => {
-    const previousDate = new Date(previous.date).getTime()
-    const nextDate = new Date(next.date).getTime()
-    return nextDate - previousDate
-  })
+  return formatPostsDesc(posts);
+}
 
-  return posts
+export function getRecentPosts(limit = 10): Post[] {
+  const allPosts = getAllPosts();
+
+  return allPosts.slice(0, limit);
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
   return getAllPosts().find((post) => post.slug === slug)
+}
+
+function formatPostsDesc(posts: Post[]): Post[] {
+  const postsDesc = posts.sort((previous, next) => {
+    const previousDate = new Date(previous.date).getTime()
+    const nextDate = new Date(next.date).getTime()
+    return nextDate - previousDate
+  });
+
+  return postsDesc;
 }

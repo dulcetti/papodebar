@@ -23,7 +23,7 @@ export function SidebarHeroCard({
   return (
     <article
       data-slot="sidebar-hero-card"
-      className={styles["list-posts-sidebar"]}
+      className={styles["sidebar-hero-card"]}
       {...props}
     >
       <a href={href} className={styles.post} tabIndex={0}>
