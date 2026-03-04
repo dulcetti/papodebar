@@ -16,7 +16,7 @@ export const newsHeroCardVariants = tv({
 		],
 		content: 'absolute',
 		title: [
-			'font-semibold leading-snug text-white',
+			'font-semibold leading-snug text-white pr-4',
 			'[text-shadow:_0_1px_4px_rgba(0,0,0,0.4)]',
 		],
 	},
