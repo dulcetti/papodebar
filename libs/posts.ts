@@ -57,6 +57,12 @@ export function getAllPosts(): Post[] {
   return formatPostsDesc(posts);
 }
 
+export function getRecentPosts(limit = 10): Post[] {
+  const allPosts = getAllPosts();
+
+  return allPosts.slice(0, limit);
+}
+
 export function getPostBySlug(slug: string): Post | undefined {
   return getAllPosts().find((post) => post.slug === slug)
 }
