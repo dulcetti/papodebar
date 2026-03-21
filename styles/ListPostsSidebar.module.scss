@@ -1,14 +1,15 @@
 @use './mixins.scss';
 
 .sidebar-hero-card {
-  margin-bottom: 5px;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
 
   .post {
     position: relative;
-    width: 320px;
 
     > .thumb {
-      min-height: 154px;
+      min-height: 200px;
       width: 100%;
     }
 
