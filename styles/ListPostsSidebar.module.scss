@@ -1,7 +1,9 @@
 @use './mixins.scss';
 
 .sidebar-hero-card {
-  margin-bottom: 5px;
+  &:not(:last-child) {
+    margin-bottom: 5px;
+  }
 
   .post {
     position: relative;
