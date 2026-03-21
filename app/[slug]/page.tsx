@@ -1,79 +1,75 @@
 import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import { Post, getAllPosts, getPostBySlug, getRecentPosts } from "@/libs/posts";
-import { markdownToHtml } from '@/libs/markdowns'
+import { getAllPosts, getPostBySlug } from "@/libs/posts";
+import { getAllPages, getPageBySlug } from "@/libs/pages";
+import PostTemplate from "@/templates/post";
+import PageTemplate from "@/templates/page";
+import { markdownToHtml } from '@/libs/markdowns';
 
-import { PostDate } from "@/components/post-date";
-import { SidebarHeroCard } from '@/components/sidebar-hero-card';
-
-import styles from '@/styles/Post.module.scss';
-
-interface PostPageProps {
+interface MetadataProps {
   params: Promise<{
     slug: string;
   }>;
-}
+};
 
 export function generateStaticParams(): { slug: string }[] {
-  return getAllPosts().map((post) => ({ slug: post.slug }));
+  const posts = getAllPosts()
+  const pages = getAllPages()
+
+  const all = [...posts, ...pages]
+
+  const slugMap = new Map<string, boolean>()
+
+  all.forEach((item) => {
+    if (slugMap.has(item.slug)) {
+      throw new Error(`Slug duplicado encontrado: ${item.slug}`)
+    }
+    slugMap.set(item.slug, true)
+  })
+
+  return all.map((item) => ({
+    slug: item.slug,
+  }))
 }
 
-export async function generateMetadata({
-  params,
-}: PostPageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPostBySlug(slug);
+export async function generateMetadata({ params }: MetadataProps) {
+  const { slug } = await params
 
-  if (!post) {
-    return {};
+  const post = getPostBySlug(slug)
+  if (post) {
+    return {
+      title: post.title,
+      description: post.description,
+    }
   }
 
-  return {
-    title: post.title,
-    description: post.description,
-  };
+  const page = getPageBySlug(slug)
+  if (page) {
+    return {
+      title: page.title,
+      description: page.description,
+    }
+  }
+
+  return {}
 }
 
-export default async function PostPage({ params }: PostPageProps) {
+export default async function PostPage({ params }: MetadataProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
-  const recentPosts = getRecentPosts();
+  const post = getPostBySlug(slug)
 
-  if (!post) {
-    notFound();
+  if (post) {
+    const processed = await markdownToHtml(post.content)
+    const contentHtml = processed.toString();
+    return <PostTemplate post={post} content={contentHtml} />
   }
 
-  const processed = await markdownToHtml(post.content)
-  const contentHtml = processed.toString();
+  const page = getPageBySlug(slug);
 
-  return (
-    <article className={styles["container-post"]}>
-      <section className={styles["single-post"]}>
-        <header className={styles["header-post"]}>
-          <PostDate
-            className={styles["post-date"]}
-            date={post.date}
-          />
-          <h1 className={styles.heading}>{post.title}</h1>
-        </header>
+  if (page) {
+    const processed = await markdownToHtml(page.content)
+    const contentHtml = processed.toString();
+    return <PageTemplate page={page} content={contentHtml} />
+  }
 
-        <div
-          className={styles["post-content"]}
-          dangerouslySetInnerHTML={{ __html: contentHtml }}
-        />
-      </section>
-
-      <aside className={styles["sidebar-post"]}>
-        {recentPosts.map((recentPost: Post) => (
-          <SidebarHeroCard
-            key={recentPost.slug}
-            imageSrc={`/images/${recentPost.coverImage}`}
-            title={recentPost.title}
-            category={recentPost.categories[0]}
-            href={`/${recentPost.slug}`}
-          />
-        ))}
-      </aside>
-    </article>
-  );
+  notFound()
 }
