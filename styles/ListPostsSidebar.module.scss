@@ -5,10 +5,10 @@
 
   .post {
     position: relative;
-    width: 320px;
+    min-width: 320px;
 
     > .thumb {
-      min-height: 154px;
+      min-height: 200px;
       width: 100%;
     }
 
