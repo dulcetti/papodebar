@@ -6,6 +6,8 @@
   > .single-post {
     background-color: #fff;
     padding-right: 16px;
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
 
     > .header-post {
       border-bottom: 1px dashed #ccc;
@@ -157,5 +159,7 @@
   > .sidebar-post {
     background-color: #fff;
     box-shadow: -6px 6px 7px -6px rgba(#000, .5);
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
   }
 }
