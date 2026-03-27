@@ -5,14 +5,13 @@
 
   > .single-post {
     background-color: #fff;
-    padding-right: 16px;
+    padding-right: .25rem;
     flex-basis: 66.66666667%;
     max-width: 66.66666667%;
 
     > .header-post {
       border-bottom: 1px dashed #ccc;
       display: flex;
-      margin-bottom: 16px;
 
       > .heading {
         color: #f9ab21;
@@ -23,6 +22,14 @@
         &:first-line {
           line-height: 1.65;
         }
+      }
+    }
+
+    > .cover-image-container {
+      margin-bottom: 1rem;
+
+      > .cover-image {
+        max-width: 100%;
       }
     }
 
