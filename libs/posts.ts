@@ -5,7 +5,7 @@ import matter from 'gray-matter'
 export interface PostFrontmatter {
   title: string;
   date: string;
-  categories: string;
+  categories: string[];
   coverImage: string;
   description?: string;
   tags?: string[];
