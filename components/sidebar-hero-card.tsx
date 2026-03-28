@@ -4,11 +4,11 @@ import styles from '@/styles/ListPostsSidebar.module.scss';
 
 export interface SidebarHeroCardProps
 	extends Omit<ComponentProps<'article'>, 'children'> {
-	imageSrc: string
-	imageAlt?: string
-	title: string
-	category?: string
-	href: string
+	imageSrc: string;
+	imageAlt?: string;
+	title: string;
+	category?: string;
+	href: string;
 }
 
 export function SidebarHeroCard({
