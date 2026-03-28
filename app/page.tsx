@@ -1,6 +1,6 @@
 import { getAllPosts } from '@/libs/posts'
 import { paginate } from '@/libs/pagination';
-import { Pagination } from '@/components/pagination'
+import { Pagination } from '@/components/pagination';
 import { NewsHeroCard } from '@/components/news-hero-card';
 
 import stylesHome from '@/styles/Home.module.scss';
@@ -9,7 +9,7 @@ const POSTS_PER_PAGE = 12;
 
 export default function Home() {
   const posts = getAllPosts();
-  const { data } = paginate(posts, 1, POSTS_PER_PAGE);
+  const { data, totalPages } = paginate(posts, 1, POSTS_PER_PAGE);
 
   return (
     <div className={stylesHome['content-home']}>
@@ -18,7 +18,7 @@ export default function Home() {
           <li key={post.slug} className={stylesHome['post']}>
             <NewsHeroCard
               href={`/${post.slug}`}
-              imageSrc={`images/${post.coverImage}`}
+              imageSrc={`/images/${post.coverImage}`}
               imageAlt={`Imagem do artigo ${post.title}`}
               size="md"
               title={post.title}
@@ -27,7 +27,7 @@ export default function Home() {
         ))}
       </ul>
 
-      <Pagination current={1} total={posts.length} />
+      <Pagination current={1} totalPages={totalPages} />
     </div>
   )
 }
