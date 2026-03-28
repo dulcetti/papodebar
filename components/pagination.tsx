@@ -2,51 +2,53 @@ import Link from 'next/link'
 
 interface Props {
   current: number
-  total: number
+  totalPages: number
   basePath?: string
-}
+};
 
 type PageItem =
   | { type: 'page'; value: number }
-  | { type: 'ellipsis' }
+  | { type: 'ellipsis' };
 
 export function Pagination({
   current,
-  total,
+  totalPages,
   basePath = '',
 }: Props) {
-  if (total <= 1) return null
+  if (totalPages <= 1) {
+    return null;
+  }
 
   const createPageLink = (page: number) =>
-    page === 1 ? basePath : `${basePath}/page/${page}`
+    page === 1 ? basePath : `${basePath}/page/${page}`;
 
-  const pages: PageItem[] = []
+  const pages: PageItem[] = [];
 
-  const delta = 2
-  const rangeStart = Math.max(2, current - delta)
-  const rangeEnd = Math.min(total - 1, current + delta)
+  const delta = 2;
+  const rangeStart = Math.max(2, current - delta);
+  const rangeEnd = Math.min(totalPages - 1, current + delta);
 
   // Primeira página
   pages.push({ type: 'page', value: 1 })
 
   // Reticências antes do range
   if (rangeStart > 2) {
-    pages.push({ type: 'ellipsis' })
+    pages.push({ type: 'ellipsis' });
   }
 
   // Páginas ao redor da atual
   for (let i = rangeStart; i <= rangeEnd; i++) {
-    pages.push({ type: 'page', value: i })
+    pages.push({ type: 'page', value: i });
   }
 
   // Reticências depois do range
-  if (rangeEnd < total - 1) {
-    pages.push({ type: 'ellipsis' })
+  if (rangeEnd < totalPages - 1) {
+    pages.push({ type: 'ellipsis' });
   }
 
   // Última página
-  if (total > 1) {
-    pages.push({ type: 'page', value: total })
+  if (totalPages > 1) {
+    pages.push({ type: 'page', value: totalPages });
   }
 
   return (
@@ -70,7 +72,7 @@ export function Pagination({
           )
         }
 
-        const isActive = item.value === current
+        const isActive = item.value === current;
 
         return (
           <Link
@@ -82,13 +84,13 @@ export function Pagination({
               textDecoration: isActive ? 'underline' : 'none',
             }}
           >
-            {item.value}
+            { item.value }
           </Link>
         )
       })}
 
       {/* Botão próxima */}
-      {current < total && (
+      {current < totalPages && (
         <Link
           href={createPageLink(current + 1)}
           style={{ marginLeft: 12 }}

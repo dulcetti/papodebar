@@ -10,6 +10,7 @@ tags:
   - "churrascaria"
   - "drinks"
   - "garcom"
+coverImage: "churrasco-wide.jpg"
 ---
 
 [![Boteco](images/foto-boteco-escuro.jpg "Boteco")](http://www.flickr.com/photos/marquito76/1023227029/)Créditos: **[**Marcos Gagliardi**](http://www.flickr.com/photos/marquito76/ "Link to Marcos Gagliardi's photostream")**

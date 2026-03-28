@@ -3,18 +3,17 @@ import path from 'path'
 import matter from 'gray-matter'
 
 export interface PostFrontmatter {
-  title: string
-  date: string
-  categories: string
-  coverImage: string
-  description?: string
+  title: string;
+  date: string;
+  categories: string[];
+  coverImage: string;
+  description?: string;
+  tags?: string[];
 }
 
 export interface Post extends PostFrontmatter {
-  slug: string
-  content: string
-  categories: string
-  coverImage: string
+  slug: string;
+  content: string;
 }
 
 const postsDir = path.join(process.cwd(), 'content/posts')
@@ -57,14 +56,23 @@ export function getAllPosts(): Post[] {
   return formatPostsDesc(posts);
 }
 
-export function getRecentPosts(limit = 10): Post[] {
+export function getRecentPosts(actualPostSlug?: string): Post[] {
   const allPosts = getAllPosts();
 
-  return allPosts.slice(0, limit);
+  return allPosts.filter((post) => post.slug !== actualPostSlug).slice(0, 10);
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
   return getAllPosts().find((post) => post.slug === slug)
+}
+
+export function getPostsByCategory(category: string): Post[] {
+  return getAllPosts().filter((post) => post.categories.includes(category));
+
+}
+
+export function getPostsByTag(tag: string): Post[] {
+  return getAllPosts().filter((post) => post.tags?.includes(tag));
 }
 
 function formatPostsDesc(posts: Post[]): Post[] {
