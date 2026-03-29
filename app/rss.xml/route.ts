@@ -4,9 +4,9 @@ import { getAllPosts } from '@/libs/posts';
 import { metadata } from '@/app/layout';
 import { sanitizeXml } from '@/libs/sanitize';
 
-const SITE_URL = 'https://www.papodebar.com';
 
 export async function GET() {
+  const SITE_URL = 'https://www.papodebar.com';
   const posts = await getAllPosts();
 
   const feed = new RSS({
@@ -30,9 +30,7 @@ export async function GET() {
           date: new Date(post.date),
           description: sanitizeXml(post.content).slice(0, 200) + '...',
           title: post.title,
-          description: sanitizeXml(post.content),
           url: `${SITE_URL}/posts/${post.slug}`,
-          date: new Date(post.date),
         });
       }
     } catch (error) {
