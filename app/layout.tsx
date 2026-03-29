@@ -9,6 +9,15 @@ interface RootLayoutProps {
   children: ReactNode
 }
 
+export const metadata = {
+  title: 'Papo de Bar - O melhor conteúdo sobre cerveja artesanal',
+  description: 'Descubra tudo sobre cerveja artesanal, dicas de harmonização, receitas e as últimas novidades do mundo cervejeiro no Papo de Bar.',
+  alternates: {
+    types: {
+      'application/rss+xml': '/rss.xml',
+    },
+  }
+};
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
