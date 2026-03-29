@@ -30,9 +30,11 @@ export default function PostTemplate({
           <h1 className={styles.heading}>{post.title}</h1>
         </header>
 
-        <div className={styles["cover-image-container"]}>
-          <img src={`/images/${post.coverImage}`} alt={`Capa da página sobre ${post.title}`} className={styles['cover-image']} />
-        </div>
+        {post.coverImage && (
+          <div className={styles["cover-image-container"]}>
+            <img src={`/images/${post.coverImage}`} alt={`Capa da página sobre ${post.title}`} className={styles['cover-image']} />
+          </div>
+        )}
 
         <div
           className={styles["post-content"]}
