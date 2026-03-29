@@ -30,9 +30,11 @@ export default function PageTemplate({
           <h1 className={styles.heading}>{page.title}</h1>
         </header>
 
-        <div className={styles["cover-image-container"]}>
-          <img src={`/images/${page.coverImage}`} alt={`Capa da página sobre ${page.title}`} className={styles['cover-image']} />
-        </div>
+        {page.coverImage && (
+          <div className={styles["cover-image-container"]}>
+            <img src={`/images/${page.coverImage}`} alt={`Capa da página sobre ${page.title}`} className={styles['cover-image']} />
+          </div>
+        )}
 
         <div
           className={styles["post-content"]}
