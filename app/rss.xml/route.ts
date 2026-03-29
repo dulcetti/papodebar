@@ -46,3 +46,25 @@ export async function GET() {
     },
   });
 }
+
+function putCategories(categories: string[] | undefined, tags: string[] | undefined): string[] {
+  const finalCategories: string[] = [];
+
+  if (categories) {
+    categories.forEach((category) => {
+      if (category) {
+        finalCategories.push(category);
+      }
+    });
+  }
+
+  if (tags) {
+    tags.forEach((tag) => {
+      if (tag) {
+        finalCategories.push(tag);
+      }
+    });
+  }
+
+  return finalCategories;
+}
