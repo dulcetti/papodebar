@@ -2,6 +2,7 @@ import RSS from 'rss';
 
 import { getAllPosts } from '@/libs/posts';
 import { metadata } from '@/app/layout';
+import { sanitizeXml } from '@/libs/sanitize';
 
 const SITE_URL = 'https://www.papodebar.com';
 
@@ -16,13 +17,19 @@ export async function GET() {
     language: 'pt-BR',
   });
 
-  posts.forEach((post) => {
-    feed.item({
-      title: post.title,
-      description: post.content,
-      url: `${SITE_URL}/posts/${post.slug}`,
-      date: new Date(post.date),
-    });
+  posts.forEach((post, index) => {
+    try {
+      if (index <= 10) {
+        feed.item({
+          title: post.title,
+          description: sanitizeXml(post.content),
+          url: `${SITE_URL}/posts/${post.slug}`,
+          date: new Date(post.date),
+        });
+      }
+    } catch (error) {
+      console.error(`Erro ao adicionar post "${post.title}" ao feed RSS:`, error);
+    }
   });
 
   return new Response(feed.xml({ indent: true }), {
