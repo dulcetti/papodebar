@@ -21,6 +21,14 @@ export async function GET() {
     try {
       if (index <= 10) {
         feed.item({
+          categories: putCategories(post.categories, post.tags),
+          custom_elements: [
+            {
+              "content:encoded": sanitizeXml(post.content),
+            },
+          ],
+          date: new Date(post.date),
+          description: sanitizeXml(post.content).slice(0, 200) + '...',
           title: post.title,
           description: sanitizeXml(post.content),
           url: `${SITE_URL}/posts/${post.slug}`,
