@@ -3,6 +3,7 @@ import type { ComponentProps } from 'react'
 import { Post, getRecentPosts } from "@/libs/posts";
 import { PostDate } from "@/components/post-date";
 import { SidebarHeroCard } from '@/components/sidebar-hero-card';
+import { ArticleSchema } from "@/components/article-schema";
 
 import styles from '@/styles/Post.module.scss';
 
@@ -21,6 +22,7 @@ export default function PostTemplate({
 
   return (
     <article className={`${className} ${styles["container-post"]}`} {...props}>
+      <ArticleSchema data={post} />
       <section className={styles["single-post"]}>
         <header className={styles["header-post"]}>
           <PostDate
