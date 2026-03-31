@@ -1,5 +1,6 @@
 import { Post } from "@/libs/posts";
 import { sanitizeXml } from "@/libs/sanitize";
+import { countWords } from "@/libs/word-count";
 
 type Props = {
   data: Post;
@@ -34,7 +35,7 @@ export function ArticleSchema({ data }: Props) {
     },
     "keywords": data.tags?.join(", ") || "",
     "articleSection": data.categories.join(", "),
-    "wordCount": "1200"
+    "wordCount": countWords(data.content)
   }
   console.info(data);
   return (
