@@ -55,7 +55,7 @@ export async function generateMetadata({ params }: MetadataProps) {
 
 export default async function PostPage({ params }: MetadataProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug)
+  const post = getPostBySlug(slug);
 
   if (post) {
     const processed = await markdownToHtml(post.content)
