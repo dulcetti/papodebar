@@ -1,6 +1,7 @@
 import type { ComponentProps } from 'react'
 
 import { Post, getRecentPosts } from "@/libs/posts";
+import { Page as PageType } from "@/libs/pages";
 import { PostDate } from "@/components/post-date";
 import { SidebarHeroCard } from '@/components/sidebar-hero-card';
 
@@ -8,7 +9,7 @@ import styles from '@/styles/Post.module.scss';
 
 interface PageProps extends Omit<ComponentProps<'article'>, 'children'> {
   content: string;
-  page: Post;
+  page: Post | PageType;
 };
 
 export default function PageTemplate({
