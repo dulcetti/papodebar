@@ -23,15 +23,15 @@ export default function PostTemplate({
   return (
     <article className={`${className} ${styles["container-post"]}`} {...props}>
       <ArticleSchema data={post} />
-      <section className={styles["single-post"]}>
-        <header className={styles["header-post"]}>
-          <PostDate
-            className={styles["post-date"]}
-            date={post.date}
-          />
-          <h1 className={styles.heading}>{post.title}</h1>
-        </header>
+      <header className={styles["header-post"]}>
+        <PostDate
+          className={styles["post-date"]}
+          date={post.date}
+        />
+        <h1 className={styles.heading}>{post.title}</h1>
+      </header>
 
+      <section className={styles["single-post"]}>
         {post.coverImage && (
           <div className={styles["cover-image-container"]}>
             <img src={`/images/${post.coverImage}`} alt={`Capa da página sobre ${post.title}`} className={styles['cover-image']} />
