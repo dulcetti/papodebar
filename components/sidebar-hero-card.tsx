@@ -1,5 +1,6 @@
 import type { ComponentProps } from 'react';
 
+import { CATEGORIES_INFOS } from '@/libs/categories';
 import styles from '@/styles/ListPostsSidebar.module.scss';
 
 export interface SidebarHeroCardProps
@@ -20,6 +21,7 @@ export function SidebarHeroCard({
 	href,
 	...props
 }: SidebarHeroCardProps) {
+  const categoryName = CATEGORIES_INFOS.find((cat) => cat.slug === category)?.name;
   return (
     <article
       data-slot="sidebar-hero-card"
@@ -40,7 +42,7 @@ export function SidebarHeroCard({
             className={styles.categories}
           >
             <span className={styles.category}>
-              {category}
+              {categoryName}
             </span>
           </p>
         )}
