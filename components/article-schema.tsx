@@ -36,8 +36,8 @@ export function ArticleSchema({ data }: Props) {
     "keywords": data.tags?.join(", ") || "",
     "articleSection": data.categories.join(", "),
     "wordCount": countWords(data.content)
-  }
-  console.info(data);
+  };
+
   return (
     <script
       type="application/ld+json"
