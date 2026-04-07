@@ -15,6 +15,10 @@ export default function NotFound() {
         <span className={styles['number']}>4</span>
       </div>
       <h1 className={styles['page-title']}>Página não existente ou a cerveja acabou!</h1>
+      <div className={styles['content']}>
+        <p>Mas não fique triste, pegue mais um copo e volte para a nossa <Link href="/">página de início</Link>.</p>
+        <p>Ou então faça uma busca no Papo de Bar:</p>
+			</div>
     </main>
   );
 }
