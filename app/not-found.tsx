@@ -14,6 +14,7 @@ export default function NotFound() {
         <span className={styles['number']}>4</span>
         <span className={styles['number']}>4</span>
       </div>
+      <h1 className={styles['page-title']}>Página não existente ou a cerveja acabou!</h1>
     </main>
   );
 }
