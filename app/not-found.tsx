@@ -7,3 +7,9 @@ export const metadata = {
   description: 'A página que você está procurando não existe.',
 };
 
+export default function NotFound() {
+  return (
+    <main className={styles['error-404']}>
+    </main>
+  );
+}
