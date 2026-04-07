@@ -18,6 +18,18 @@ export default function NotFound() {
       <div className={styles['content']}>
         <p>Mas não fique triste, pegue mais um copo e volte para a nossa <Link href="/">página de início</Link>.</p>
         <p>Ou então faça uma busca no Papo de Bar:</p>
+        <form role="search" method="get" id="search-form" className={styles['search-form']} action="https://www.papodebar.com/">
+          <h2 className={styles['title']}>Encontre sua bebida favorita!</h2>
+
+          <div className={styles['fieldset']}>
+            <label className={form['field-container']}>
+              <input type="search" className={form['form']} placeholder="Ex: cerveja artesanal" />
+              <span className={form['label']}>termos da busca</span>
+            </label>
+
+            <button type="submit" className={form['button']} id="search-submit">buscar</button>
+          </div>
+        </form>
 			</div>
     </main>
   );
