@@ -10,6 +10,10 @@ export const metadata = {
 export default function NotFound() {
   return (
     <main className={styles['error-404']}>
+      <div className={styles['box-404']}>
+        <span className={styles['number']}>4</span>
+        <span className={styles['number']}>4</span>
+      </div>
     </main>
   );
 }
