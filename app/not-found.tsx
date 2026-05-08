@@ -1,6 +1,7 @@
-import styles from '@/styles/NotFound.module.scss';
-import form from '@/styles/Form.module.scss';
 import Link from 'next/link';
+import { SearchComponent } from '@/components/search-component';
+
+import styles from '@/styles/NotFound.module.scss';
 
 export const metadata = {
   title: '404 - Página Não Encontrada',
@@ -14,22 +15,18 @@ export default function NotFound() {
         <span className={styles['number']}>4</span>
         <span className={styles['number']}>4</span>
       </div>
+
       <h1 className={styles['page-title']}>Página não existente ou a cerveja acabou!</h1>
+
       <div className={styles['content']}>
         <p>Mas não fique triste, pegue mais um copo e volte para a nossa <Link href="/">página de início</Link>.</p>
         <p>Ou então faça uma busca no Papo de Bar:</p>
-        <form role="search" method="get" id="search-form" className={styles['search-form']} action="https://www.papodebar.com/">
-          <h2 className={styles['title']}>Encontre sua bebida favorita!</h2>
 
-          <div className={styles['fieldset']}>
-            <label className={form['field-container']}>
-              <input type="search" className={form['form']} placeholder="Ex: cerveja artesanal" />
-              <span className={form['label']}>termos da busca</span>
-            </label>
+        <div role="search" className={styles['search-box']}>
+          <h2 className={styles['title']}>Encontre seu assunto etílico favorito!</h2>
 
-            <button type="submit" className={form['button']} id="search-submit">buscar</button>
-          </div>
-        </form>
+          <SearchComponent />
+        </div>
 			</div>
     </main>
   );
