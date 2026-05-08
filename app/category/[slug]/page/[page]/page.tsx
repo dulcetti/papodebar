@@ -67,7 +67,7 @@ export default async function CategoriesPage({ params }: Props) {
           <li key={post.slug} className={stylesHome['post']}>
             <NewsHeroCard
               href={`/${post.slug}`}
-              imageSrc={`/images/${post.coverImage}`}
+              imageSrc={`/images/${post.coverImage && ''}`}
               imageAlt={`Imagem do artigo ${post.title}`}
               size="md"
               title={post.title}
