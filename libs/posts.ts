@@ -9,6 +9,7 @@ export interface PostFrontmatter {
   coverImage: string;
   description?: string;
   tags?: string[];
+  excerpt?: string;
 }
 
 export interface Post extends PostFrontmatter {
@@ -73,6 +74,20 @@ export function getPostsByCategory(category: string): Post[] {
 
 export function getPostsByTag(tag: string): Post[] {
   return getAllPosts().filter((post) => post.tags?.includes(tag));
+}
+
+export function getPostsBySearch(query: string): Post[] {
+  const normalized = query.toLowerCase();
+
+  return getAllPosts().filter((post) => {
+    return (
+      post.title.toLowerCase().includes(normalized) ||
+      post.description?.toLowerCase().includes(normalized) ||
+      post.content.toLowerCase().includes(normalized) ||
+      post.tags?.some((tag) => tag.toLowerCase().includes(normalized)) ||
+      post.categories.some((cat) => cat.toLowerCase().includes(normalized))
+    );
+  });
 }
 
 function formatPostsDesc(posts: Post[]): Post[] {
