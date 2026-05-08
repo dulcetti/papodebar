@@ -44,7 +44,7 @@ export default async function CategoriesPage({ params }: Props) {
 
   return (
     <div className={stylesHome['content-home']}>
-      {category && (
+      {category && category[0].coverImage && (
         <div className={stylesPost["cover-image-container"]}>
           <img src={category[0].coverImage} alt={`Capa da categoria ${category[0].name}`} className={stylesPost['cover-image']} />
         </div>
