@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 2"
 date: 2010-11-17
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "familia"
   - "mulheres"

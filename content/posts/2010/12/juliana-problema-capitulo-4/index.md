@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 4"
 date: 2010-12-01
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "amante"
   - "cafajeste"

@@ -2,7 +2,7 @@
 title: "Nunca mais eu vou beber"
 date: 2010-10-04
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "contos-etilicos"

@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Capítulo 2"
 date: 2011-05-19
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "canalha"
   - "fama"

@@ -1,11 +1,11 @@
 ---
 title: "Problemas nos formulários"
 date: 2009-08-11
-categories: 
+categories:
   - "novidades"
-tags: 
+tags:
   - "bugs"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "problemas"
 ---
 

@@ -2,7 +2,7 @@
 title: "Rufião – O Rei do Rio: Capítulo 2"
 date: 2012-10-10
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "escritor"
   - "garotas"

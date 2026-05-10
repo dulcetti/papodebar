@@ -2,7 +2,7 @@
 title: "Eu Tenho Duas Namoradas: Capítulo 4"
 date: 2012-02-15
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "beijo-triplo"
   - "como-pegar-duas-mulheres"

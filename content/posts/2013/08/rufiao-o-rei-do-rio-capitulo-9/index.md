@@ -2,7 +2,7 @@
 title: "Rufião – O Rei do Rio: Capítulo 9"
 date: 2013-08-07
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "humor"
   - "justica"

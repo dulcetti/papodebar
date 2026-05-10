@@ -1,9 +1,9 @@
 ---
 title: "Juliana Problema: Capítulo 3"
 date: 2010-11-24
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "cafajeste"
   - "capangas"
   - "mulheres"

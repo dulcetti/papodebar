@@ -1,9 +1,9 @@
 ---
 title: "Rufião – O Rei do Rio: Capítulo 7"
 date: 2013-01-30
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "casamento"
   - "escritor"
   - "humor"

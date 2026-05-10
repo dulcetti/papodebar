@@ -2,7 +2,7 @@
 title: "Da Internet Para A Vida"
 date: 2010-08-03
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "azar"
   - "bebado"

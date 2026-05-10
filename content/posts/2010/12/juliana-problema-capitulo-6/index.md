@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 6"
 date: 2010-12-15
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "mulheres"
   - "namoro"

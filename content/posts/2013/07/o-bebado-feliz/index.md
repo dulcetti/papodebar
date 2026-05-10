@@ -2,7 +2,7 @@
 title: "O bêbado feliz!"
 date: 2013-07-24
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebado-feliz"
   - "bebados"

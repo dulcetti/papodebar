@@ -2,7 +2,7 @@
 title: "Identidade, por favor?"
 date: 2012-01-16
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "aviao"
   - "carteira-de-identidade"

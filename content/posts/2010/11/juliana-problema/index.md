@@ -2,7 +2,7 @@
 title: "Juliana Problema"
 date: 2010-11-10
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "balada"
   - "motel"

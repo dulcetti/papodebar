@@ -1,11 +1,11 @@
 ---
 title: "Papo de Bar em mudanças"
 date: 2009-05-05
-categories: 
+categories:
   - "novidades"
-tags: 
+tags:
   - "bebados"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "mudancas"
 ---
 

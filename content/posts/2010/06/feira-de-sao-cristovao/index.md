@@ -1,9 +1,9 @@
 ---
 title: "Feira de São Cristovão e Jeremy Joseph"
 date: 2010-06-15
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "cachaca"
   - "carne-de-sol"
   - "comida"

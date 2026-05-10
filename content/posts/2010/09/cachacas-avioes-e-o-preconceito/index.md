@@ -2,7 +2,7 @@
 title: "Cachaças, aviões e o preconceito"
 date: 2010-09-02
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "aviao"
   - "bebados"

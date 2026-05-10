@@ -2,7 +2,7 @@
 title: "Eu Tenho Duas Namoradas: Capítulo 2"
 date: 2012-01-04
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bares"
   - "conversa-em-boteco"

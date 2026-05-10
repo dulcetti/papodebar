@@ -1,10 +1,10 @@
 ---
 title: "Mulheres, cerveja, xixi, fofoca e a conta"
 date: 2009-03-26
-categories: 
-  - "contos-etiiicos"
+categories:
+  - "contos-etilicos"
   - "destaque"
-tags: 
+tags:
   - "bar"
   - "bate-papo"
   - "boteco"
@@ -29,7 +29,7 @@ Na primeira rodada de chopp, um brinde à salute, na segunda timtim a nós. Aê�
 
 ### É isso mesmo!
 
- 
+
 
 Só tem mulher na mesa bebendo. Essa mulherada de hoje em dia bebe, hein. Foi-se o tempo do coquetel de fruta, se é que existiu. Levantamento de copo é o esporte preferido. O problema é o tal do xixi. Mulher bebendo é uma tristeza nesse sentido. Depois que a torneirinha abre, não tem jeito. É hora de desamarrar a gatinha.
 

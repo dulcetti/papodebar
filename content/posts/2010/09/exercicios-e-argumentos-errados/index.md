@@ -2,10 +2,10 @@
 title: "Exercícios e Argumentos Errados"
 date: 2010-09-07
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "academia"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "malhacao"
   - "personal-trainer"
   - "relacionamento"

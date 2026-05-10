@@ -2,7 +2,7 @@
 title: "A Triste História do Homem Bem Dotado: Capítulo 4"
 date: 2011-11-02
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bem-dotado"
   - "festas"

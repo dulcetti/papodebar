@@ -2,7 +2,7 @@
 title: "Eu tenho Duas Namoradas: Último Capítulo"
 date: 2012-04-06
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "dormir-no-sofa"
   - "humor"

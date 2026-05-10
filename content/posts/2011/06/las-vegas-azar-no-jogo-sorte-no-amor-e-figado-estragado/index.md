@@ -2,7 +2,7 @@
 title: "Las Vegas: Azar no jogo, sorte no amor e fígado estragado"
 date: 2011-06-30
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "cassino"
   - "historias-de-bebado"

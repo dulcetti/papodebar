@@ -13,7 +13,7 @@ tags:
   - "cachaca"
   - "cerveja"
   - "cervejas"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "drinks"
   - "humor"
   - "mulheres"

@@ -1,9 +1,9 @@
 ---
 title: "Vila Madalena, samba, mulheres e cachaça"
 date: 2010-10-12
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "balada"
   - "cachaca"
   - "caipirinha"

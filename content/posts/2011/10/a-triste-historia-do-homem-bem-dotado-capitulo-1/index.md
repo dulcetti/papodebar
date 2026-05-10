@@ -2,7 +2,7 @@
 title: "A Triste História do Homem Bem Dotado: Capítulo 1"
 date: 2011-10-13
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "criancas"
   - "homens-bem-dotados"

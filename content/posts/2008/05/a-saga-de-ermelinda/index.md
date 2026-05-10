@@ -1,9 +1,9 @@
 ---
 title: "A Saga de Ermelinda"
 date: 2008-05-15
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "bares"
   - "bebados"
   - "botecos"

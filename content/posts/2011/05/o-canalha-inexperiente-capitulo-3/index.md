@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Capítulo 3"
 date: 2011-05-25
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "comedor"
   - "coroas"

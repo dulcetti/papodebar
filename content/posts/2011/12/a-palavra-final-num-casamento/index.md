@@ -2,7 +2,7 @@
 title: "A palavra final num casamento"
 date: 2011-12-07
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "casamento"
   - "cerveja"

@@ -2,10 +2,10 @@
 title: "Creme de Papaia do Pecado"
 date: 2012-09-12
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "como-ferrar-um-mormon"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "creme-de-papaia"
   - "eua"
   - "licor-de-cassis"

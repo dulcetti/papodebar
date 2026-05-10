@@ -1,9 +1,9 @@
 ---
 title: "Era uma vez o acabado - 3"
 date: 2014-04-04
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "bebados"
   - "ex-namorada"
   - "historias-de-bebado"

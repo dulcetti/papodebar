@@ -2,12 +2,12 @@
 title: "Amnésia"
 date: 2010-08-25
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "amnesia"
   - "amnesia-alcoolica"
   - "cafe-da-manha"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "namorada"
 coverImage: "rei-rainha-cafe-da-manha.jpg"
 ---

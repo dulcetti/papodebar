@@ -2,7 +2,7 @@
 title: "Era uma vez o acabado – 1"
 date: 2014-03-14
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "contos"
   - "contos-etilicos"

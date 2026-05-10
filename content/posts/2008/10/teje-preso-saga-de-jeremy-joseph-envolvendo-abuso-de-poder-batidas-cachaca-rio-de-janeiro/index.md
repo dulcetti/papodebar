@@ -1,9 +1,9 @@
 ---
 title: "A saga de Jeremy envolvendo abuso de poder e batidas com cachaça no Rio de Janeiro"
 date: 2008-10-09
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "batida"
   - "cachaca"
   - "historias-tag"

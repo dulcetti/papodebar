@@ -2,7 +2,7 @@
 title: "A cerveja está em tudo, acredite!"
 date: 2013-05-03
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "a-cerveja-esta-em-tudo"
   - "amigos"
@@ -10,7 +10,7 @@ tags:
   - "amizade-com-cerveja"
   - "casamentos"
   - "cerveja"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "historias-de-bebados"
   - "momentos-de-alegria-e-de-tristeza"
 coverImage: "garrafas-cerveja-foco.jpg"

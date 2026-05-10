@@ -1,9 +1,9 @@
 ---
 title: "Ressaca Moral"
 date: 2010-07-06
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "amante"
   - "bebados"
   - "boteco"

@@ -1,9 +1,9 @@
 ---
 title: "Era uma vez o acabado – 4"
 date: 2014-04-18
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "bares"
   - "bebados"
   - "botecos-pe-sujo"

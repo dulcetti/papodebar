@@ -1,11 +1,11 @@
 ---
 title: "Papo de Bar v2"
 date: 2009-07-08
-categories: 
+categories:
   - "dicas"
-tags: 
+tags:
   - "comemoracao"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "lancamento"
   - "papo-de"
 ---

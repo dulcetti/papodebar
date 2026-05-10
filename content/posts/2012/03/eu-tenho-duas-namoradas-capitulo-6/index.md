@@ -2,7 +2,7 @@
 title: "Eu Tenho Duas Namoradas: Capítulo 6"
 date: 2012-03-28
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "como-pegar-duas-mulheres"
   - "dormir-no-sofa"

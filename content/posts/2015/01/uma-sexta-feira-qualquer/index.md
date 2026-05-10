@@ -2,7 +2,7 @@
 title: "Uma sexta-feira qualquer"
 date: 2015-01-21
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "baladas"
   - "contos-etilicos"

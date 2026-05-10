@@ -2,7 +2,7 @@
 title: "O outro lado da moeda"
 date: 2010-08-31
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "amnesia-alcoolica"
   - "bebados"

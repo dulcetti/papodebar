@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Capítulo 5"
 date: 2011-06-09
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "canalha-inexperiente"
   - "consulta-com-urologista"

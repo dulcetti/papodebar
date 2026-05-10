@@ -1,9 +1,9 @@
 ---
 title: "50 Tons de Tinder – Encontro 5"
 date: 2015-05-25
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "doideiras"
   - "mulheres"
   - "mulheres-de-atitude"

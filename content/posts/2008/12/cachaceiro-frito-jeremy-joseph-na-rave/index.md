@@ -1,9 +1,9 @@
 ---
 title: "Cachaceiro frito. Jeremy Joseph na rave."
 date: 2008-12-26
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "bebidas"
   - "cachaca"
   - "drogas"

@@ -1,9 +1,9 @@
 ---
 title: "Chapeuzinho Vermelho e suas garrafas de whisky"
 date: 2015-09-24
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "chapeuzinho-vermelho"
   - "chapeuzinho-vermelho-etilica"
   - "conto-de-fadas"

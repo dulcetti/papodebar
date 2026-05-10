@@ -1,9 +1,9 @@
 ---
 title: "Scotch, por favor. Sem gelo."
 date: 2008-09-03
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "contos"
   - "contos-etilicos"
   - "gelo"

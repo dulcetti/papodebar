@@ -1,0 +1,89 @@
+@use './mixins.scss';
+
+$border-color: #337ab7;
+$empty-color: #adafaf;
+$filled-color: #6f6f63;
+$placeholder-color: #fff;
+
+.fieldset {
+  margin: 0 auto;
+
+  @include mixins.mq('tablet') {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+  }
+
+  > .field-container {
+    align-items: flex-start;
+    display: flex;
+    height: 36px;
+    position: relative;
+    width: 100%;
+
+    > .field {
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid $border-color;
+      display: block;
+      height: inherit;
+      margin-bottom: 3px;
+      transition: border .25s;
+      width: 90%;
+
+      &::-ms-clear {
+        display: none;
+      }
+
+      &::placeholder {
+        opacity: 0;
+        transition: opacity .1s;
+      }
+
+      &.-filled,
+      &:focus {
+        outline: 0;
+        transition: border .25s;
+
+        + .label {
+          color: $filled-color;
+          font-size: 11px;
+          top: -8px;
+          transition: color, font-size, top .25s;
+        }
+
+        &::placeholder {
+          opacity: 1;
+          transition: opacity .25s;
+        }
+      }
+    }
+
+    > .label {
+      color: $empty-color;
+      cursor: text;
+      display: block;
+      font-size: 14px;
+      position: absolute;
+      top: 10px;
+      transition: color, font-size, top .25s;
+
+      > strong {
+        font-weight: normal;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  > .button {
+    background-color: #f0ad4e;
+    border: 0;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 5px 30px;
+  }
+}

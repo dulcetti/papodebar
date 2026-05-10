@@ -1,9 +1,9 @@
 ---
 title: "Água que passarinho não bebe, mas você sim"
 date: 2016-10-05
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "aguardente"
   - "cachaca"
   - "contos"

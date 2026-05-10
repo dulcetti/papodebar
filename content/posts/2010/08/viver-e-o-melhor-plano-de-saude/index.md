@@ -2,7 +2,7 @@
 title: "Viver é o melhor Plano de Saúde"
 date: 2010-08-10
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "cerveja"

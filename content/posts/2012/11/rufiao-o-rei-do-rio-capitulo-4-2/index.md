@@ -2,7 +2,7 @@
 title: "Rufião - O Rei do Rio: Capítulo 4 ½"
 date: 2012-11-07
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bares"
   - "escritor"

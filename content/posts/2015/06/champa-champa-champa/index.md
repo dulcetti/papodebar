@@ -2,7 +2,7 @@
 title: "Champa, Champa, Champa!"
 date: 2015-06-03
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "amigos"
   - "bebados"

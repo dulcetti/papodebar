@@ -2,7 +2,7 @@
 title: "Rufião - o Rei do Rio: Capítulo 6"
 date: 2012-12-05
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "escritor"
   - "humor"

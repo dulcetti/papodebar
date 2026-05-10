@@ -2,7 +2,7 @@
 title: "Is bin derzafan pra dedéu"
 date: 2009-04-07
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "alemanha"
   - "alemao"

@@ -2,7 +2,7 @@
 title: "Álcool e Casamento. Aliados ou inimigos?"
 date: 2012-06-28
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "destaque"
 tags:
   - "alcool-e-casamento"

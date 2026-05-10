@@ -2,7 +2,7 @@
 title: "Era Uma Vez o Acabado – 2"
 date: 2014-03-21
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "historias-de-bebado"

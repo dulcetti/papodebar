@@ -1,9 +1,9 @@
 ---
 title: "50 Tons de Tinder – Encontro 7"
 date: 2015-11-27
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "50-tons-de-tinder"
   - "brochante"
   - "brochar"

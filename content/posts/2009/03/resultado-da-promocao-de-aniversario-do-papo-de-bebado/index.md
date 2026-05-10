@@ -1,11 +1,11 @@
 ---
 title: "Resultado da promoção de aniversário do Papo de Bar"
 date: 2009-03-17
-categories: 
+categories:
   - "promocoes"
-tags: 
+tags:
   - "aniversario"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "promocao"
 coverImage: "print-vencedor.gif"
 ---

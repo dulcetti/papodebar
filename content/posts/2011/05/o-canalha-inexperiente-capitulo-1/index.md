@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Capítulo 1"
 date: 2011-05-11
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "barangueiro"
   - "canalha"

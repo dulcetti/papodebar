@@ -1,9 +1,9 @@
 ---
 title: "50 Tons de Tinder – Encontro 6"
 date: 2015-07-10
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "50-tons-de-tinder"
   - "contos-etilicos"
   - "encontros-casuais"

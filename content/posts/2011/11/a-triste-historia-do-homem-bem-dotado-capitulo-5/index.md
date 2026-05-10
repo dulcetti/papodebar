@@ -2,7 +2,7 @@
 title: "A Triste História do Homem Bem Dotado: Capítulo 5"
 date: 2011-11-24
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "advogado"
   - "bem-dotado"

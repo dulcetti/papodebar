@@ -2,7 +2,7 @@
 title: "The point of no return"
 date: 2010-08-12
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "contos-etilicos"

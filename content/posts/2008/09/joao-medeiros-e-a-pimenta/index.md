@@ -1,9 +1,9 @@
 ---
 title: "João Medeiros e a pimenta"
 date: 2008-09-19
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "cachaca"
   - "caipirinha"
   - "joao-medeiros"

@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 10 (Último Capítulo)"
 date: 2011-03-30
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebe"
   - "casamento"

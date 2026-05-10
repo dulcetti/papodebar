@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Último Capítulo"
 date: 2011-08-25
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "aprendizado"
   - "canalha"

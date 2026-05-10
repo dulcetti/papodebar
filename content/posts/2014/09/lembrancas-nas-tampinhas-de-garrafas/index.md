@@ -1,9 +1,9 @@
 ---
 title: "Lembranças nas tampinhas de garrafas..."
 date: 2014-09-23
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "amnesia-alcoolica"
   - "bares"
   - "historias-de-bar"

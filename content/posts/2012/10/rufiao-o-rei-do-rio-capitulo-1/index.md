@@ -2,7 +2,7 @@
 title: "Rufião – O Rei do Rio: Capítulo 1"
 date: 2012-10-03
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "classificados-de-jornal"
   - "escritor"
