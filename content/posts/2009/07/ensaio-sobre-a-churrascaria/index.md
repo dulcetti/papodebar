@@ -2,7 +2,7 @@
 title: "Ensaio sobre a churrascaria"
 date: 2009-07-13
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebidas"
   - "cachaca"

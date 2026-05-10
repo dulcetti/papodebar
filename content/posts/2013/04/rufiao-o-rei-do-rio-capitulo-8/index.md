@@ -1,10 +1,10 @@
 ---
 title: "Rufião – O Rei do Rio: Capítulo 8"
 date: 2013-04-03
-categories: 
-  - "contos-etiiicos"
-tags: 
-  - "contos-etiiicos"
+categories:
+  - "contos-etilicos"
+tags:
+  - "contos-etilicos"
   - "governador"
   - "homens-que-pegam-traveco"
   - "humor"

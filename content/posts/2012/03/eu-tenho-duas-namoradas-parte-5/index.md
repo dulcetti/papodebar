@@ -2,7 +2,7 @@
 title: "Eu Tenho Duas Namoradas: Capítulo 5"
 date: 2012-03-09
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "como-pegar-duas-mulheres"
   - "menage"

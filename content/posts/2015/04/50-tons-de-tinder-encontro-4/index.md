@@ -2,7 +2,7 @@
 title: "50 Tons de Tinder – Encontro 4"
 date: 2015-04-16
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bares"
   - "contos-etilicos"

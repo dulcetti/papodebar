@@ -2,7 +2,7 @@
 title: "50 Tons de Tinder – Encontro 1"
 date: 2015-03-24
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bares"
   - "contos-etilicos"

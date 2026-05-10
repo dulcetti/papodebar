@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 5"
 date: 2010-12-08
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "amante"
   - "cafajeste"

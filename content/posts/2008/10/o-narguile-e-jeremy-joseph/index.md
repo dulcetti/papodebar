@@ -1,9 +1,9 @@
 ---
 title: "O Narguilê e Jeremy Joseph"
 date: 2008-10-28
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "cachaca"
   - "narguile"
 ---

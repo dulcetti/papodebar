@@ -2,10 +2,10 @@
 title: "Rufião - O Rei do Rio: Último Capítulo"
 date: 2013-08-21
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "assassinato"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "contos-etilicos"
   - "historias-de-bebado"
   - "novela"

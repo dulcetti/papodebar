@@ -2,7 +2,7 @@
 title: "A Triste História do Homem Bem Dotado: Capítulo 3"
 date: 2011-10-26
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bem-dotado"
   - "broxa"

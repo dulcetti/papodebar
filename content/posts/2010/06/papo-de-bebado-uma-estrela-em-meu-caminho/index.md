@@ -2,7 +2,7 @@
 title: "Papo de Bêbado: Uma Estrela em Meu Caminho"
 date: 2010-06-02
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "botafogo"
   - "emprego"
@@ -16,7 +16,7 @@ coverImage: "drink-estrela.jpg"
 
 **Palavras do Dono do Bar:**
 
-Iniciaremos aqui uma nova seção chamada "**[Contos Etílicos](https://www.papodebar.com/category/contos-etiiicos/)"**. Com algumas novidades bem interessantes, para mostrar que não perdemos nosso espírito brincalhão, zoador, mas sempre com conteúdo fodástico.
+Iniciaremos aqui uma nova seção chamada "**[Contos Etílicos](https://www.papodebar.com/category/contos-etilicos/)"**. Com algumas novidades bem interessantes, para mostrar que não perdemos nosso espírito brincalhão, zoador, mas sempre com conteúdo fodástico.
 
 Esta seção Papo de Bêbado irá conter várias histórias hilárias, logicamente de bêbados, para vocês rirem um bocado, principalmente naquele stress filho da puta no trabalho. E o melhor de tudo, você, sim, você mesmo com cara de trouxa olhando pra tela, também poderá participar. Pegue seu texto e mande para nós com seu nome e email, com sua história fodástica de bêbado, que nossa equipe irá analisar e postará aqui, para que todos os leitores interajam na sua história e te sacaneiem bastante.
 

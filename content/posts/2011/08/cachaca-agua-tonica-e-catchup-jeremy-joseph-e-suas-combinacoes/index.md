@@ -2,7 +2,7 @@
 title: "Cachaça, água tônica e catchup. Jeremy Joseph e suas combinações"
 date: 2011-08-03
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "balada-universitaria"
   - "cachaca"

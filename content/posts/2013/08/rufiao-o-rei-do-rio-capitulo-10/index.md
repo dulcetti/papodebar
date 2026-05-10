@@ -2,7 +2,7 @@
 title: "Rufião - O Rei do Rio: Capítulo 10"
 date: 2013-08-14
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "corrupcao"
   - "humor"

@@ -2,7 +2,7 @@
 title: "A cerveja nas festas de aniversário"
 date: 2013-07-10
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "amigos"
   - "aniversarios"

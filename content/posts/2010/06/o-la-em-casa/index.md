@@ -2,7 +2,7 @@
 title: "Ô lá em casa"
 date: 2010-06-17
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "cachorros"

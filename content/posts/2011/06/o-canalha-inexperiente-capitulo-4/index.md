@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Capítulo 4"
 date: 2011-06-01
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "canalha"
   - "comedor"

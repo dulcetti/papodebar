@@ -2,7 +2,7 @@
 title: "Cachaça com sushi"
 date: 2011-11-25
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "cachaca"
   - "comida-japonesa"

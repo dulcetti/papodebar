@@ -1,9 +1,9 @@
 ---
 title: "Cultura, tecnologia, invovação e... CACHAÇA 3 Praias"
 date: 2010-04-09
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "cachaca"
   - "cachaca-3-praias"
   - "cultura"

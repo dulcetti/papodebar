@@ -2,7 +2,7 @@
 title: "A Triste História do Homem Bem Dotado: Último Capítulo"
 date: 2011-11-30
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "advogado"
   - "bem-dotado"

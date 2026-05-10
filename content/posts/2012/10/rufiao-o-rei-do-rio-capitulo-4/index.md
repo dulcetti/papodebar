@@ -2,7 +2,7 @@
 title: "Rufião – O Rei Do Rio: Capítulo 4"
 date: 2012-10-24
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bares"
   - "brigas"

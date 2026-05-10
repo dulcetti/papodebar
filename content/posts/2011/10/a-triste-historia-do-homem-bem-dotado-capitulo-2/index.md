@@ -2,7 +2,7 @@
 title: "A Triste História do Homem Bem Dotado: Capítulo 2"
 date: 2011-10-19
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bem-dotado"
   - "cabaco"

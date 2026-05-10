@@ -4,7 +4,7 @@ date: 2013-05-31
 categories:
   - "shots"
 tags:
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "contos-etilicos"
   - "historias-de-bebado"
   - "historias-engracadas"

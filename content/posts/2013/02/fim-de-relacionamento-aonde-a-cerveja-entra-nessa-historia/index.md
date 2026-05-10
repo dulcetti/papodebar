@@ -2,7 +2,7 @@
 title: "Fim de relacionamento: Aonde a cerveja entra nessa história?"
 date: 2013-02-20
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "apaixonado"
   - "bebendo-cerveja"

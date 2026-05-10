@@ -2,7 +2,7 @@
 title: "Gringos, Lapa, mineirada, cambista caridoso, Pearl Jam e Jeremy Joseph"
 date: 2011-12-12
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "albergues"
   - "cachaca"

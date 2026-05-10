@@ -2,7 +2,7 @@
 title: "O Cafajeste Inexperiente: Capítulo 7"
 date: 2011-08-10
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "canalha"
   - "canalha-inexperiente"

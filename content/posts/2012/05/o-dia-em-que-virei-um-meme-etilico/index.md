@@ -2,7 +2,7 @@
 title: "O dia em que virei um Meme Etílico"
 date: 2012-05-01
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "bicicleta"

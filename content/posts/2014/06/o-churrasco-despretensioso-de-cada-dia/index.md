@@ -1,9 +1,9 @@
 ---
 title: "O churrasco despretensioso de cada dia"
 date: 2014-06-09
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "antarctica"
   - "brahma"
   - "budweiser"

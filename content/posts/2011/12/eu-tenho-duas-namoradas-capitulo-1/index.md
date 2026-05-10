@@ -2,7 +2,7 @@
 title: "Eu Tenho Duas Namoradas: Capítulo 1"
 date: 2011-12-22
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "duas-namoradas"
   - "homem-com-duas-namoradas"

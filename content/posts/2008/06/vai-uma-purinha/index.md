@@ -1,9 +1,9 @@
 ---
 title: "Vai uma purinha?"
 date: 2008-06-27
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "brasileira"
   - "cachaca"
   - "caipirinha"

@@ -1,9 +1,9 @@
 ---
 title: "50 Tons de Tinder – Apresentação"
 date: 2015-03-17
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "50-tons-de-cinza"
   - "50-tons-de-tinder"
   - "aplicativos"

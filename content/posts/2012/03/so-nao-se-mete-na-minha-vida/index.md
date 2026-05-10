@@ -2,7 +2,7 @@
 title: "Só não se mete na minha vida!"
 date: 2012-03-01
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bares"
   - "bebados"

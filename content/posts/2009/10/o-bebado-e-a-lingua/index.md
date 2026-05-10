@@ -1,9 +1,9 @@
 ---
 title: "O bêbado e a língua"
 date: 2009-10-05
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "bebados"
   - "bebidas"
   - "gravidez"

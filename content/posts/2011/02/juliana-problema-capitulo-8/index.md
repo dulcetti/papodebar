@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 8"
 date: 2011-02-16
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebe"
   - "filhos"

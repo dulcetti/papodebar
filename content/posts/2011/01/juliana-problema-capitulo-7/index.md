@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 7"
 date: 2011-01-05
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "chefes"
   - "empregados"

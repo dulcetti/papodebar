@@ -2,7 +2,7 @@
 title: "Eu Tenho Duas Namoradas: Capítulo 3"
 date: 2012-01-13
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "duas-namoradas"
   - "homem-com-duas-namoradas"

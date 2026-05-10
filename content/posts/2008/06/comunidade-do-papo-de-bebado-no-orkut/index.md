@@ -1,12 +1,12 @@
 ---
 title: "Comunidade do Papo de Bar no Orkut"
 date: 2008-06-04
-categories: 
+categories:
   - "dicas"
-tags: 
+tags:
   - "bebados"
   - "comunidade"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "orkut"
 ---
 

@@ -1,9 +1,9 @@
 ---
 title: "Era uma Vez o Acabado – 5"
 date: 2014-05-23
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "bebados"
   - "cafajeste"
   - "cha"

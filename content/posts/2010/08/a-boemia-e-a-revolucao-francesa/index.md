@@ -2,7 +2,7 @@
 title: "A Boemia e a Revolução Francesa"
 date: 2010-08-02
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "alcool"
   - "boemia"

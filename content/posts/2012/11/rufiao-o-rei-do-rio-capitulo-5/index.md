@@ -2,7 +2,7 @@
 title: "Rufião – O Rei do Rio Capítulo 5"
 date: 2012-11-14
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "casa-de-massagem"
   - "escritor"

@@ -2,7 +2,7 @@
 title: "O Canalha Inexperiente: Capítulo 6"
 date: 2011-06-29
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "canalha"
   - "canalha-inexperiente"

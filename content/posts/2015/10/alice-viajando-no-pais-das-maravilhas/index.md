@@ -1,9 +1,9 @@
 ---
 title: "Alice viajando no país das maravilhas"
 date: 2015-10-15
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "alice"
   - "alice-no-pais-das-maravilhas"
   - "conto-de-fadas"

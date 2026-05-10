@@ -2,7 +2,7 @@
 title: "Juliana Problema: Capítulo 9 (penúltimo capítulo)"
 date: 2011-03-23
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebe"
   - "casamento"

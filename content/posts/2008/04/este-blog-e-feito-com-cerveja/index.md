@@ -1,12 +1,12 @@
 ---
 title: "Este Blog é feito com Cerveja"
 date: 2008-04-11
-categories: 
+categories:
   - "eventos"
-tags: 
+tags:
   - "blogcomcerveja"
   - "cerveja"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "lancamento"
   - "papo-de-homem"
   - "treta"

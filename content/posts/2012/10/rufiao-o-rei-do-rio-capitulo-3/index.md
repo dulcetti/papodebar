@@ -2,7 +2,7 @@
 title: "Rufião – O Rei do Rio: Capítulo 3"
 date: 2012-10-17
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "escritor"
   - "festas"

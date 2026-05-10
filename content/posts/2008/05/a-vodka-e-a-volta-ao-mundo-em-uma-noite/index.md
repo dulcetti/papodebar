@@ -1,9 +1,9 @@
 ---
 title: "A Vodka e a volta ao mundo em uma noite"
 date: 2008-05-29
-categories: 
-  - "contos-etiiicos"
-tags: 
+categories:
+  - "contos-etilicos"
+tags:
   - "alemanha"
   - "bebidas"
   - "boate"

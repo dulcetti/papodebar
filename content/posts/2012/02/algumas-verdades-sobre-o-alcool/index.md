@@ -1,10 +1,10 @@
 ---
 title: "Algumas verdades sobre o álcool"
 date: 2012-02-13
-categories: 
+categories:
   - "shots"
-tags: 
-  - "contos-etiiicos"
+tags:
+  - "contos-etilicos"
   - "curiosidadestag"
   - "frases"
   - "frases-de-bebado"

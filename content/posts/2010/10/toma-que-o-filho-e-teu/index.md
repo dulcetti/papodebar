@@ -2,7 +2,7 @@
 title: "Toma que o Filho é Teu"
 date: 2010-10-20
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "barriga"
   - "cerveja"

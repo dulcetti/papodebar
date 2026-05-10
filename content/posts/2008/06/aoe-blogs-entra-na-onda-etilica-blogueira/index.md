@@ -1,11 +1,11 @@
 ---
 title: "AOE Blogs entra na onda etílica blogueira"
 date: 2008-06-07
-categories: 
+categories:
   - "curiosidades"
-tags: 
+tags:
   - "aoe-blogs"
-  - "contos-etiiicos"
+  - "contos-etilicos"
   - "parceria"
 ---
 

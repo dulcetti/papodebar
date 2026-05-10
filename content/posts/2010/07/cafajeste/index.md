@@ -2,7 +2,7 @@
 title: "Cafajeste"
 date: 2010-07-22
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebado"
   - "cafajeste"

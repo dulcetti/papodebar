@@ -2,7 +2,7 @@
 title: "Estranhos Casados"
 date: 2010-09-15
 categories:
-  - "contos-etiiicos"
+  - "contos-etilicos"
 tags:
   - "bebados"
   - "casamento"
